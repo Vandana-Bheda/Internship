@@ -1,0 +1,63 @@
+body{
+    background-color: #eee;
+    color: #333;
+    font-size: 14px;
+}
+
+h1{
+    font-size: 63px;
+    text-align: center;
+}
+
+h2{
+    font-size: 30px;
+    text-align: center;
+}
+
+h3{
+    font-size: 24px;
+    text-align: center;
+}
+
+
+.section1{
+    border: 1px solid #ddd;
+    margin: 0 50px;
+    text-align: center;
+}
+
+.section2{
+    border: 1px solid #ddd;
+    margin: 20px 50px;
+    text-align: center;
+    
+}
+.section2 img{
+    border-radius: 50%;
+    margin: 10px 0;
+}
+
+.section2 p{
+    background-color: #ddd;
+    margin: 5px;
+    padding: 10px;
+}
+
+.sub-head{
+    font-size: 24px;
+    margin: 20px 50px;
+    font-weight: bold;
+}
+
+.points{
+    margin: 20px 50px;
+}
+
+.l_caption{
+    text-align: center;
+    font-style: italic;
+}
+
+.l_caption a{ 
+    text-decoration: none;
+}

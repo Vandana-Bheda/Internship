@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="2.css">
+    <title>2 Task</title>
+</head>
+<body>
+    <form action="">
+        <p>
+            User Id
+            <input type="text" readonly value="IN859YB"> 
+        </p> 
+        <p>
+            User Name*
+            <input type="email" required>
+        </p>
+        <p>
+            Password* 
+            <input type="password" pattern=".{8,}" placeholder="abc@xyz.com">
+            Note:Minimum 8 characters required
+        </p>
+        <p>
+            Gender:
+            <input type="radio" name="radiobtn" value="Male" checked>Male<br>
+            <input type="radio" id="fradio" name="radiobtn" value="Female">Female
+        </p>
+        <p>
+            Country
+            <select name="countries" id="countru_names">
+                <option value="Argentina">Argentina</option>
+                <option value="America">America</option>
+                <option value="Brazil" disabled>Brazil</option>
+                <option value="Italy">Italy</option>
+                <option value="Jordan" disabled>Jordan</option>
+            </select>
+        </p>
+        <p>
+            Known Language<br>
+            <input type="checkbox">Hindi<br>
+            <input type="checkbox">Gujrati<br>
+            <input type="checkbox">English<br>
+        </p>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+    </form>
+</body>
+</html>

@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+}
+
+.menus{
+    position: absolute;
+}
+
+.nav{
+    padding: 10px;
+    float: left;
+    width: 25%;
+    height: 600px;
+    background-color: gray;
+}
+.header{
+    padding: 10px;
+    left: 25%;
+    height: 100px;
+    width: 100%;
+    background-color: lightgreen; 
+}
+
+.article{
+    padding: 10px;
+    left: 25%;
+    top: 100Px;
+    background-color: beige;
+    height: 400px;
+    width: 100%;
+}
+
+.footer{
+    padding: 10px;
+    left: 25%;
+    top: 500px;
+    background-color: lightgreen;
+    height: 100px;
+    width: 100%;
+}
+

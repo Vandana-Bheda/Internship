@@ -1,0 +1,126 @@
+*{
+    width: 100%;
+    height: 100%; 
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+}
+
+.container1{
+    display: flex;
+    flex-direction: column;
+}
+
+.container1_1{
+    height: 50%;
+    background-color: lightgray;
+    display: flex;
+    justify-content: end;
+}
+
+.container1_1_1{
+    background-color: rgb(86, 23, 23);
+    width: 50%;
+    border-top-left-radius: 9999px;
+    border-bottom-left-radius: 9999px;
+}
+
+.container1_2{
+    height: 50%;
+    background-color: red;
+}
+
+.container2{
+    display: flex;
+    flex-direction: column;
+}
+
+.container2_1{
+    height: 50%;
+    background-color: gray;
+    display: flex;
+    justify-content: start;
+}
+
+.container2_1_1{
+    background-color: rgb(86, 23, 23);
+    width: 50%;
+    border-top-right-radius: 9999px;
+    border-bottom-right-radius: 9999px;   
+}
+
+.container2_2{
+    height: 50%;
+    background-color: brown;
+    display: flex;
+    justify-content: end;
+}
+
+.container2_2_1{
+    background-color: turquoise;
+    width: 50%;
+    border-top-left-radius: 9999px;
+    border-bottom-left-radius: 9999px;   
+}
+
+.container3{
+    display: flex;
+    flex-direction: column;
+}
+
+.container3_1{
+    height: 50%;
+    background-color: brown;
+    display: flex;
+    justify-content: end;
+}
+
+.container3_1_1{
+    background-color: blue;
+    width: 50%;
+    border-top-left-radius: 9999px;
+    border-bottom-left-radius: 9999px;   
+}
+
+.container3_2{
+    height: 50%;
+    background-color: gray;
+    display: flex;
+    justify-content: start;
+}
+
+.container3_2_1{
+    background-color: turquoise;
+    width: 50%;
+    border-top-right-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+}
+.container4{
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: start;
+}
+
+.container4_1{
+    height: 50%;
+    background-color: red;
+}
+
+.container4_1_1{
+    background-color: blue;
+    width: 50%;
+    border-top-right-radius: 9999px;
+    border-bottom-right-radius: 9999px;   
+}
+
+.container4_2{
+    height: 50%;
+    background-color: lightgray;
+}

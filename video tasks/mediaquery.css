@@ -1,0 +1,23 @@
+div{ 
+    display:inline-block;  
+}
+.box{
+    height: 50px;
+    width: 122px;
+}
+
+#box1{
+    background-color:#C0C0C0; 
+}
+
+#box2{
+    background-color:#A9A9A9; 
+}
+
+#box3{
+    background-color: #808080; 
+}
+
+#box4{
+    background-color: 	#727477;
+}
