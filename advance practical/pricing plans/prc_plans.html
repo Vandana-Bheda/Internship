@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- container -->
+     <div class="w-full bg-slate-800 p-6 lg:pb-0">
+        <!-- content portion -->
+        <div class="text-center">
+            <p class="text-purple-800 text-xl font-bold">pricing</p>
+            <p class="text-white lg:text-6xl md:text-4xl font-bold py-6">Pricing plans for teams of all sizes</p>
+            <p class="text-gray-400 text-xl font-semibold lg:px-56 md:px-16 flex-wrap">Choose an affordable plan that's packed with the best features for engaging your audience, creating customer loyalty, and driving sales.</p>
+        </div>
+
+        <!-- cards -->
+         <div class="w-full flex flex-col justify-center items-center pt-20">
+            <div class="bg-slate-700 w-fit flex p-1 rounded-full mb-10">
+                <p class="text-white bg-purple-800 rounded-full p-2">Monthly</p>
+                <p class="text-white p-2 ml-3">Annually</p>
+            </div>
+            <div class="grid lg:grid-cols-3 grid-cols-1 gap-8">
+                <!-- card 1 -->
+                 <div class="p-8 lg:pb-0 border lg:border-b-0 border-gray-600 rounded-t-3xl">
+                    <p class="text-white font-semibold text-2xl">Freelancer</p>
+                    <p class="text-gray-400 text-lg py-4">The essentials to provide your best work for clients.</p>
+                    <div>
+                        <p class="font-bold text-2xl text-white text-4xl"> $15 <sub class="text-base font-normal text-gray-400">/month</sub> </p>
+                    </div>
+                    <button class="bg-slate-700 text-white w-full py-2 font-semibold rounded text-lg my-8">Buy plan</button>
+                    <p class="text-gray-400 text-lg"> &check; 5 products</p>
+                 </div>
+
+                 <!-- card 2 -->
+                 <div class="p-8 lg:pb-0 border-2 lg:border-b-0 border-purple-800 rounded-t-3xl">
+                    <div class="flex justify-between">
+                        <p class="text-white font-semibold text-2xl">Startup</p>
+                        <p class="text-white font-semibold text-base bg-purple-800 rounded-full px-2 content-center">Most popular</p>
+                    </div>
+                    <p class="text-gray-400 text-lg py-4">A plan that scales with your rapidly growing business.</p>
+                    <div>
+                        <p class="font-bold text-2xl text-white text-4xl"> $30 <sub class="text-base font-normal text-gray-400">/month</sub> </p>
+                    </div>
+                    <button class="bg-purple-800 text-white w-full py-2 font-semibold rounded text-lg my-8">Buy plan</button>
+                    <p class="text-gray-400 text-lg"> &check; 25 products</p>
+                 </div>
+
+                 <!-- card 3 -->
+                 <div class="p-8 lg:pb-0 border lg:border-b-0 border-gray-600 rounded-t-3xl ">
+                    <p class="text-white font-semibold text-2xl">Startup</p>
+                    <p class="text-gray-400 text-lg py-4">A plan that scales with your rapidly growing business.</p>
+                    <div>
+                        <p class="font-bold text-2xl text-white text-4xl"> $48 <sub class="text-base font-normal text-gray-400">/month</sub> </p>
+                    </div>
+                    <button class="bg-slate-700 text-white w-full py-2 font-semibold rounded text-lg my-8">Buy plan</button>
+                    <p class="text-gray-400 text-lg"> &check; Unlimited products</p>
+                 </div>
+            </div>
+         </div>
+     </div>
+    
+</body>
+</html>
