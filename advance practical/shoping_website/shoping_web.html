@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <title>Document</title>
+</head>
+<body class="h-full w-full bg-black text-white m-0 p-0">
+    <!-- navbar -->
+    <nav class="w-full">
+        <!-- top nav -->
+         <div class="text-center bg-blue-500 p-1 w-full">
+            <p>Enjoy complimentary standard shipping on all orders.</p>
+         </div>
+
+        <!-- bottom nav -->
+         <div class="flex justify-between md:p-8 p-4 w-full">
+            <div>
+                <p class="md:text-2xl text-xl font-semibold">Zimmerman</p>
+            </div>
+            <div class="flex">
+                <img src="assets/search.svg" alt="" class="md:pr-4 pr-1">
+                <img src="assets/shopping-cart.svg" alt="" class="md:pr-4 pr-1">
+                <img src="assets/user.svg" alt="" class="pr-4">
+            </div>
+         </div>
+    </nav>
+
+    <!-- main container -->
+     <main>
+        <div class="md:px-28 px-4 w-full flex lg:flex-row flex-col py-4">
+            <!-- left side -->
+            <div class="lg:w-[30%] w-full">
+                <img src="assets/codeimg.jpg" alt="" class="border">
+            </div>
+
+            <!-- right side -->
+            <div class="lg:w-[70%] w-full px-6 self-end lg:py-0 py-6">
+                <p class="font-semibold text-4xl">Cutting Edge</p>
+                <p class="py-2 text-lg ">Now taking online orders. Order today and get 15% off on your first order. Hurry while supplies last!</p>
+                <button class="border rounded-full px-16 py-1"> shop &darr;</button>
+            </div>
+        </div>
+     </main>
+
+    <!-- footer area -->
+     <footer class="md:px-28 px-4 py-6">
+        <div class="flex justify-end items-center">
+            <p class="px-4 font-semibold">Sort by</p>
+            <button class="border p-2 flex">Most Popular
+                <svg class="fill-current h-5 w-5 mt-1 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                </svg>
+            </button>
+        </div>
+        <div class="py-6 grid md:grid-cols-3 grid-cols-1 gap-6">
+            <div>
+                <img src="assets/codeimg.jpg" alt="" class="border">
+            </div>
+            <div>
+                <img src="assets/codeimg.jpg" alt="" class="border">
+            </div>
+            <div>
+                <img src="assets/codeimg.jpg" alt="" class="border">
+            </div>
+        </div>
+     </footer>
+</body>
+</html>
