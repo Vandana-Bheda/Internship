@@ -1,0 +1,183 @@
+.nav{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center; 
+    width: 100%;
+}
+
+.p_nm{
+    width: 70%;
+    margin: 10px;
+}
+
+.search{
+    background-color: white;
+    color: gray;
+    width: 10%;
+    height: 25px;
+    border-radius: 4px;
+    padding: 5px 0 0 10px;
+} 
+
+.dashboard{
+    width: 5%;
+    padding: 10px;
+}
+
+.settings{
+    width: 5%;
+    padding: 10px;
+}
+
+.profile{
+    width: 5%;
+    padding: 10px;
+}
+
+.help{
+    width: 5%;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 15px 0 15px 0;
+    color: blue;
+    height: 600px;
+    float: left;
+}
+
+.menu1{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+}
+
+.menu2{  
+    padding: 10px;
+}
+
+.menu3{  
+    padding: 10px;
+}
+
+.menu4{  
+    padding: 10px 10px 30px 10px ;
+}
+
+.menu5{  
+    padding: 10px;
+}
+
+.menu6{  
+    padding: 10px;
+}
+
+.menu7{  
+    padding: 10px;
+}
+
+.menu8{  
+    padding: 10px;
+}
+
+.menu9{  
+    padding: 10px 10px 30px 10px;
+}
+
+.menu10{  
+    padding: 10px;
+}
+
+.menu11{  
+    padding: 10px;
+}
+
+.menu12{  
+    padding: 10px;
+}
+
+.menu13{  
+    padding: 10px;
+}
+
+p{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 10px 10px 300px;
+}
+
+.lables{
+    display:flex;
+}
+
+.lbl1{
+    background-color: gray;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin-left: 100px;
+}
+
+.lbl2{
+    background-color: gray;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin-left: 100px;
+}
+
+.lbl3{
+    background-color: gray;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin-left: 100px;
+}
+
+.lbl4{
+    background-color: gray;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin-left: 100px;
+}
+
+.lables_name{
+    display: flex;
+}
+
+.lblnm1{
+    padding: 10px 0 0 130px;
+    text-align: center;
+}
+
+.lblnm2{
+    padding: 10px 0 0 150px;
+    text-align: center;
+}
+
+.lblnm3{
+    padding: 10px 0 0 150px;
+    text-align: center;
+}
+
+.lblnm4{
+    padding: 10px 0 0 150px;
+    text-align: center;
+}
+table{
+    width: 75%;
+    margin-left: 300px;
+}
+
+tr{
+    height: 30px;
+}
+tr:nth-child(even){
+    background-color: lightgrey;
+}

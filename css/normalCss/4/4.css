@@ -1,0 +1,37 @@
+.header{
+    background-color: red;
+    text-align: center;
+    padding: 10px;
+}
+
+.main{
+    display: flex;
+    height: 100px;
+}
+.mainleft{
+    background-color: yellow;
+    width: 30%;
+    text-align: center;
+    padding: 5px;
+    flex-basis: 200px;
+}
+
+.mainmiddle{
+    background-color: skyblue;
+    padding: 15px;
+    flex-grow: 5;
+}
+
+.mainright{
+    background-color: pink;
+    width: 30%;
+    text-align: center;
+    padding: 5px;
+    flex-basis: 200px;
+}
+
+.footer{
+    background-color: lightgreen;
+    text-align: center;
+    padding: 10px;
+}

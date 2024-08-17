@@ -1,0 +1,55 @@
+.container{
+    border: 2px solid black;
+}
+.items{
+    border: 5px solid red;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.p_item1{
+    display: flex;
+    justify-content: space-between;
+    margin:10px 0 10px 0;
+}
+
+.citem1_1{
+    border: 5px solid red;
+    height: 100px;
+    width: 300px;
+}
+
+.citem1_2{
+    border: 5px solid red;
+    height: 100px;
+    width: 300px;
+    margin-top: 20px; 
+}
+
+.citem1_3{
+    border: 5px solid red;
+    height: 100px;
+    width: 300px; 
+}
+
+.p_item2{
+    display: flex;
+    justify-content: space-around;
+    margin:10px 0 10px 0;
+}
+.citem2_1{
+    border: 5px solid red;  
+    height: 100px;
+    width: 300px;
+}
+
+.citem2_2{
+    border: 5px solid red; 
+    height: 100px;
+    width: 300px;
+}
+
+.item3{
+    border: 5px solid red;
+    height: 50px;
+}
