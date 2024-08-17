@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <title>Document</title>
+
+    <style>
+        .w-div {
+            border-top: 150px solid transparent;
+            border-left: 20px solid #facc15;
+            box-sizing: border-box;
+        }
+
+        .w-div2 {
+            border-top: 150px solid transparent;
+            border-right: 20px solid #facc15;
+            box-sizing: border-box;
+        }
+
+        .div1_1 {
+            background-image: linear-gradient(83deg, #facc15 0 97%, #000 calc(97% + 1px) 100%);
+        }
+
+        .div1_2 {
+            background-image: linear-gradient(-83deg, #facc15 0 97%, #000 calc(97% + 1px) 100%);
+        }
+
+        .div1:hover {
+            transform: scale(1.2);
+            transition: all 1s;
+            animation-timing-function: ease-in-out;
+            cursor: pointer;
+
+            .div1_chris {
+                transform: rotate(0deg);
+                transition: all 1s;
+            }
+
+            .div1_chris_p {
+                transform: rotate(0deg);
+                transition: all 1s;
+            }
+
+            .div1_co {
+                transform: rotate(0deg);
+                transition: all 1s;
+            }
+
+            .div1_bg {
+                transform: rotate(0deg);
+                transition: all 1s;
+            }
+
+            .div1_imgdiv {
+                transform: rotate(0deg);
+                height: 95px;
+                width: 95px;
+                top: 15px;
+                left: -38px;
+                transition: all 1s;
+            }
+
+            .div1_imgdiv2 {
+                transform: rotate(0deg);
+                height: 95px;
+                width: 95px;
+                top: 15px;
+                right: -38px;
+                transition: all 1s;
+            }
+
+            .div1_img {
+                transform: rotate(0deg);
+                transition: no 2s;
+            }
+        }
+    </style>
+</head>
+
+<body class="m-0 py-16 bg-black w-screen overflow-hidden">
+    <div class="flex h-[170px] px-[20rem] div1">
+        <div class="bg-yellow-400 py-10 pl-20 pr-10 relative w-3/5 ml-auto mr-auto h-full div1_1">
+            <div
+                class="bg-black text-yellow-400 text-2xl w-fit p-2 rounded-lg font-semibold absolute top-[-2rem] left-[4rem] rotate-[-3deg] div1_chris">
+                <p class="div1_chris_p"> Chris Coyier</p>
+            </div>
+            <div
+                class="bg-yellow-400 w-fit text-sm p-1 rounded-lg absolute font-semibold top-[-1.3rem] right-12 rotate-2 div1_co">
+                CO-FUNDER</div>
+            <p class="py-2 font-semibold text-lg">Chris is a front-end developer and designer.He writes a bunch of HTML,
+                CSS, and JavaScript and shakes the pompoms for Codepen.</p>
+            <p class="bg-black text-yellow-400 rounded-lg px-2 w-fit">@chriscoyier</p>
+            <div
+                class="h-[100px] w-[100px] flex absolute top-[.8rem] left-[-2.5rem] rotate-[-3deg] rounded-lg div1_bg">
+                <div class="w-[28%] bg-yellow-400 h-full rounded-s-lg div1_bg2"></div>
+                <div class="w-[72%] bg-black h-full rounded-e-lg div1_bg1"></div>
+            </div>
+            <div class="rotate-[-3deg] absolute top-[1.3rem] left-[-2.1rem] rounded-lg h-[85px] w-[85px] div1_imgdiv">
+                <img src="assets/img2.jpeg" alt=""
+                    class="boject-contain w-full h-full rounded-lg">
+            </div>
+        </div>
+        <!-- <div class="bg-black text-white h-full w-1/5 w-div"></div> -->
+    </div>
+
+    <div class="flex h-[170px] px-[20rem] my-20 div1">
+        <div class="bg-yellow-400 py-10 pr-20 pl-10 relative w-3/5 ml-auto mr-auto h-full div1_2" dir="rtl">
+            <div
+                class="bg-yellow-400 text-sm w-fit py-1 px-2 rounded font-semibold absolute top-[-1.2rem]  left-12 rotate-[-3deg] div1_chris">
+                <p class="div1_chris_p">CO-FUNDER </p>
+            </div>
+            <div
+                class="bg-black text-yellow-400 w-fit text-2xl p-2 rounded-lg absolute font-semibold top-[-2rem] right-[4.5rem] rotate-2 div1_co">
+                Alex Vazquez</div>
+            <p class="py-2 font-semibold text-lg">Chris is a front-end developer and designer.He writes a bunch of HTML,
+                CSS, and JavaScript and shakes the pompoms for Codepen.</p>
+            <p class="bg-black text-yellow-400 rounded-lg px-2 w-fit" dir="ltr">@quezo</p>
+            <div class="h-[100px] w-[100px] flex absolute top-[.8rem] right-[-2.5rem] rotate-3 rounded-lg div1_bg">
+                <div class="w-[28%] bg-yellow-400 h-full rounded-s-lg"></div>
+                <div class="w-[72%] bg-black h-full rounded-e-lg"></div>
+            </div>
+            <div class="rotate-3 absolute top-[1.3rem] right-[-2.1rem] rounded-lg h-[85px] w-[85px] div1_imgdiv2">
+                <img src="assets/img2.jpeg" alt="" class="boject-contain w-full h-full rounded-lg">
+            </div>
+        </div>
+    </div>
+
+    <div class="flex h-[170px] px-[20rem] div1">
+        <div class="bg-yellow-400 py-10 pl-20 pr-10 relative w-3/5 ml-auto mr-auto h-full div1_1">
+            <div
+                class="bg-black text-yellow-400 text-2xl w-fit p-2 rounded-lg font-semibold absolute top-[-2rem] left-[4rem] rotate-[-3deg] div1_chris">
+                <p class="div1_chris_p"> Marie Mosley</p>
+            </div>
+            <p class="py-2 font-semibold text-lg">Chris is a front-end developer and designer.He writes a bunch of HTML,
+                CSS, and JavaScript and shakes the pompoms for Codepen.</p>
+            <p class="bg-black text-yellow-400 rounded-lg px-2 w-fit">@mariemosley</p>
+            <div
+                class="h-[100px] w-[100px] flex absolute top-[.8rem] left-[-2.5rem] rotate-[-3deg] rounded-lg div1_bg">
+                <div class="w-[28%] bg-yellow-400 h-full rounded-s-lg div1_bg2"></div>
+                <div class="w-[72%] bg-black h-full rounded-e-lg div1_bg1"></div>
+            </div>
+            <div class="rotate-[-3deg] absolute top-[1.3rem] left-[-2.1rem] rounded-lg h-[85px] w-[85px] div1_imgdiv">
+                <img src="assets/img2.jpeg" alt=""
+                    class="boject-contain w-full h-full rounded-lg div1_img">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

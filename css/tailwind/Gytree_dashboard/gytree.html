@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <title>Document</title>
+
+    <style>
+            ::-webkit-scrollbar {
+                width: 5px;
+                height: 10px;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background-color: black;
+                border-radius: 10px;
+            }
+
+            ::-webkit-scrollbar-track {
+                border-radius: 10px;
+            }
+    </style>
+</head>
+
+<body class="m-0 p-2 pr-0 flex lg:flex-row flex-col bg-gray-100 h-screen overflow-hidden">
+
+    <!-- left div -->
+    <div
+        class="lg:w-[200px] w-full bg-red-800 lg:rounded-xl rounded-none py-2 text-white flex lg:flex-col flex-row lg:items-start items-center lg:overflow-y-scroll lg:overflow-x-hidden overflow-x-scroll overflow-y-hidden left-div">
+        <p class="pl-2 lg:pb-2 pb-0 text-xs">GENERAL</p>
+        <div class="p-2 pl-2 rounded-lg flex items-center bg-pink-600 mx-2 w-[90%]">
+            <img src="assets/user.svg" alt="">
+            <p class="text-xs pl-2 pr-6">Dashboard</p>
+        </div>
+        <div class="p-2 pl-4 flex items-center">
+            <img src="assets/user.svg" alt="">
+            <p class="text-xs pl-2 pr-4">Company</p>
+        </div>
+        <div class="p-2 pl-4 flex items-center">
+            <img src="assets/user.svg" alt="">
+            <p class="text-xs pl-2 pr-4">Patient</p>
+        </div>
+        <div class="p-2 pl-4 flex items-center">
+            <img src="assets/user.svg" alt="">
+            <p class="text-xs pl-2 pr-4">Expert</p>
+        </div>
+        <div class="p-2 pl-4 flex items-center">
+            <img src="assets/user.svg" alt="">
+            <p class="text-xs pl-2 pr-4">Order</p>
+        </div>
+        <div class="p-2 pl-4 flex items-center">
+            <img src="assets/user.svg" alt="">
+            <p class="text-xs pl-2 pr-4">Appointment</p>
+        </div>
+        <div class="p-2 pl-4 flex items-center">
+            <img src="assets/user.svg" alt="">
+            <p class="text-xs pl-2 pr-4">Prescription</p>
+        </div>
+        <div class="p-2 pl-4 flex items-center">
+            <img src="assets/user.svg" alt="">
+            <p class="text-xs pl-2 text-nowrap pr-4">Lab-test</p>
+        </div>
+        <div class="p-2 pl-4 flex items-center">
+            <img src="assets/user.svg" alt="">
+            <p class="text-xs pl-2 pr-4">Quiz</p>
+        </div>
+        <div class="p-2 pl-4 flex items-center">
+            <img src="assets/user.svg" alt="">
+            <p class="text-xs pl-2 pr-4 text-nowrap">Admin-Role</p>
+        </div>
+
+        <p class="pl-2 py-3 text-xs">MASTER</p>
+        <div class="p-1 pl-4 flex items-center">
+            <img src="assets/user.svg" alt="">
+            <p class="text-xs pl-2 pr-4">Program</p>
+        </div>
+        <div class="p-2 pl-4 flex items-center">
+            <img src="assets/user.svg" alt="">
+            <p class="text-xs pl-2 pr-4 text-nowrap">Lab-Test</p>
+        </div>
+        <div class="p-2 pl-4 flex items-center">
+            <img src="assets/user.svg" alt="">
+            <p class="text-xs pl-2pr-4">Membership</p>
+        </div>
+        <div class="p-2 pl-4 flex items-center">
+            <img src="assets/user.svg" alt="">
+            <p class="text-xs pl-2 pr-4">Consultation</p>
+        </div>
+        <div class="p-2 pl-4 flex items-center">
+            <img src="assets/user.svg" alt="">
+            <p class="text-xs pl-2 pr-4">Service</p>
+        </div>
+        <div class="p-2 pl-4 flex items-center">
+            <img src="assets/user.svg" alt="">
+            <p class="text-xs pl-2 pr-4">Designation</p>
+        </div>
+        <div class="p-2 pl-4 flex items-center">
+            <img src="assets/user.svg" alt="">
+            <p class="text-xs pl-2 pr-4 text-nowrap">Area of Expertise</p>
+        </div>
+        <div class="p-2 pl-4 flex items-center">
+            <img src="assets/user.svg" alt="">
+            <p class="text-xs pl-2 pr-4">Coupon</p>
+        </div>
+        <div class="p-2 pl-4 flex items-center">
+            <img src="assets/user.svg" alt="">
+            <p class="text-xs pl-2 pr-4">Product</p>
+        </div>
+    </div>
+
+    <!-- right div -->
+    <div class="w-full overflow-y-scroll">
+        <!-- nav bar -->
+        <div class="md:px-4 px-0 w-full lg:py-0 py-2 sticky top-1">
+            <div class="w-full bg-white rounded-lg px-4 flex justify-between items-center ">
+                <div class="flex items-center">
+                    <img src="assets/menu-hamburger.svg" alt="">
+                    <img src="assets/logo-gytree.webp" alt="" class="w-[70px]">
+                </div>
+                <div class="flex items-center">
+                    <p class="px-2 text-sm font-semibold">Gytree Admin</p>
+                    <p class="bg-red-800 rounded-full p-1 text-white text-sm">GA</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- dashboard -->
+
+        <div class="py-4 md:px-4 px-0">
+            <p class="font-bold text-sm">Dashboard</p>
+            <p class="text-gray-500 text-xs font-semibold">Dashboard</p>
+        </div>
+
+        <!-- main contatent -->
+
+        <div class="grid lg:grid-cols-2 grid-cols-1 gap-4 md:px-4 px-0">
+            <div class="bg-white p-2 rounded-lg">
+                <div class="flex justify-between">
+                    <p class="font-bold text-sm">Total Sales</p>
+                    <div class="flex p-1 bg-gray-100 items-center border ">
+                        <img src="assets/date.svg" alt="">
+                        <p class="text-xs">31-7-2024 - 31-7-2024</p>
+                    </div>
+                </div>
+                <table class="bg-gray-100 w-full mt-2 rounded">
+                    <tr>
+                        <td class="p-2"> </td>
+                        <td class="text-xs font-bold p-2 text-center">Total No. of Sales</td>
+                        <td class="text-xs font-bold p-2 text-end">Total Revenue</td>
+                    </tr>
+                    <tr class="border-b border-dashed">
+                        <td class="text-xs p-2 text-gray-400">Package</td>
+                        <td class="p-2 font-bold text-xs text-center">2</td>
+                        <td class="p-2 text-xs text-end font-semibold">8750.00</td>
+                    </tr>
+                    <tr>
+                        <td class="text-xs p-2 text-gray-400">Labtest</td>
+                        <td class="p-2 font-bold text-xs text-center">2</td>
+                        <td class="p-2 text-xs text-end font-semibold">1950.00</td>
+                    </tr>
+                    <tr>
+                        <td class="h-[60px]"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="bg-white p-2 rounded-lg">
+                <div class="flex justify-between">
+                    <p class="font-bold text-sm">User wise sales</p>
+                    <div class="flex p-1 bg-gray-100 items-center border ">
+                        <img src="assets/date.svg" alt="">
+                        <p class="text-xs">31-7-2024 - 31-7-2024</p>
+                    </div>
+                </div>
+                <table class="bg-gray-100 w-full mt-2 rounded">
+                    <tr>
+                        <td class="text-xs font-bold p-2">User Name</td>
+                        <td class="text-xs font-bold p-2 text-end">Total Revenue</td>
+                    </tr>
+                    <tr class="border-b border-dashed">
+                        <td class="text-xs p-2 text-gray-400">Riddhi Gupta</td>
+                        <td class="p-2 text-xs text-end font-semibold">5250.00</td>
+                    </tr>
+                    <tr class="border-b border-dashed">
+                        <td class="text-xs p-2 text-gray-400">Sinjini</td>
+                        <td class="p-2 text-xs text-end font-semibold">3500.00</td>
+                    </tr>
+                    <tr class="border-b border-dashed">
+                        <td class="text-xs p-2 text-gray-400">Monika Sharma</td>
+                        <td class="p-2 text-xs text-end font-semibold">1950.00</td>
+                    </tr>
+                    <tr>
+                        <td class="text-xs p-2 text-gray-400">Trupti Milind Bansode</td>
+                        <td class="p-2 text-xs text-end font-semibold">0.00</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="bg-white p-2 rounded-lg">
+                <div class="flex justify-between">
+                    <p class="font-bold text-sm">Coupon use</p>
+                    <div class="flex p-1 bg-gray-100 items-center border ">
+                        <img src="assets/date.svg" alt="">
+                        <p class="text-xs">31-7-2024 - 31-7-2024</p>
+                    </div>
+                </div>
+                <table class="bg-gray-100 w-full mt-2 rounded">
+                    <tr>
+                        <td class="text-xs font-bold p-2">Coupon Name</td>
+                        <td class="text-xs font-bold p-2 text-end">Total used</td>
+                    </tr>
+                    <tr>
+                        <td class="text-xs p-2 text-gray-400">FAMILY (code:FAMILY)</td>
+                        <td class="p-2 text-xs text-end font-semibold">2</td>
+                    </tr>
+                    <tr>
+                        <td class="h-[100px]"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="bg-white p-2 rounded-lg">
+                <div class="flex justify-between">
+                    <p class="font-bold text-sm">Doctor Revenue</p>
+                    <div class="flex p-1 bg-gray-100 items-center border ">
+                        <img src="assets/date.svg" alt="">
+                        <p class="text-xs">31-7-2024 - 31-7-2024</p>
+                    </div>
+                </div>
+                <table class="bg-gray-100 w-full mt-2 rounded">
+                    <tr>
+                        <td class="text-xs font-bold p-2">Expert Name</td>
+                        <td class="text-xs font-bold p-2 text-end">Total Revenue</td>
+                    </tr>
+                    <tr class="border-b border-dashed ">
+                        <td class="text-xs p-2 text-gray-400">Shradhha Dhapare</td>
+                        <td class="p-2 text-xs text-end font-semibold">8750.00</td>
+                    </tr>
+                    <tr>
+                        <td class="text-xs p-2 text-gray-400"> </td>
+                        <td class="p-2 text-xs text-end font-semibold">1950.00</td>
+                    </tr>
+                    <tr>
+                        <td class="h-[70px]"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="bg-white p-2 rounded-lg">
+                <div class="flex justify-between">
+                    <p class="font-bold text-sm">Packages</p>
+                    <div class="flex p-1 bg-gray-100 items-center border ">
+                        <img src="assets/date.svg" alt="">
+                        <p class="text-xs">31-7-2024 - 31-7-2024</p>
+                    </div>
+                </div>
+                <table class="bg-gray-100 w-full mt-2 rounded">
+                    <tr>
+                        <td class="text-xs font-bold p-2 text-start w-max">User Name </td>
+                        <td class="text-xs font-bold p-2 text-center w-max">Expert Name</td>
+                        <td class="text-xs font-bold p-2 text-center w-max">Package Name</td>
+                        <td class="text-xs font-bold p-2 text-end w-max">Appointment Date</td>
+                    </tr>
+                    <tr>
+                        <td class="h-[150px]"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="bg-white p-2 rounded-lg">
+                <div class="flex justify-between">
+                    <p class="font-bold text-sm">Consultations</p>
+                    <div class="flex p-1 bg-gray-100 items-center border ">
+                        <img src="assets/date.svg" alt="">
+                        <p class="text-xs">31-7-2024 - 31-7-2024</p>
+                    </div>
+                </div>
+                <table class="bg-gray-100 w-full mt-2 rounded md:overflow-hidden overflow-scroll">
+                    <tr>
+                        <td class="text-xs font-bold p-2 text-start w-max">User Name </td>
+                        <td class="text-xs font-bold p-2 text-center w-max">Expert Name</td>
+                        <td class="text-xs font-bold p-2 text-end w-max">Appointment Date-Time</td>
+                    </tr>
+                    <tr>
+                        <td class="h-[150px] w-max"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

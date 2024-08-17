@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <title>Document</title>
+</head>
+<body class="w-full h-full flex lg:flex-row flex-col lg:pr-20 pr-0">
+    <!-- left portion -->
+    <div class="lg:w-1/5 w-full">
+        <div class="flex lg:justify-start justify-between px-2 text-sm py-1">
+            <p class="pr-2">Connect</p>  
+            <p class="pr-2">Edit </p>  
+            <p class="pr-2">View</p>  
+            <p class="pr-2">Help</p>  
+        </div>
+        <div class="flex justify-between bg-green-900 text-white p-4">
+            <p class="font-semibold">Compass</p>
+            <img src="assets/settings.svg" alt="">
+        </div>
+        <div class="py-4 px-2 bg-gray-100">
+            <button class="flex border shadow-inner border-gray-400 rounded-lg w-full py-2 justify-center bg-white"> 
+                <p class="text-sm font-semibold">New Connection</p> 
+                <img src="assets/new_connectionn.svg" alt="">
+            </button>
+        </div>
+        <div class="px-2 bg-gray-100 flex lg:flex-col flex-row lg:justify-start justify-between">
+            <div class="py-2">
+                <div class="flex items-center py-2">
+                    <img src="assets/saved_con.svg" alt="">
+                    <p class="px-2 font-bold">Saved connections</p>
+                </div>
+                <div class="flex items-start py-1 px-2">
+                    <img src="assets/gytree.svg" alt="" class="py-1">
+                    <div class="px-2">
+                        <p class="font-semibold text-sm">gytree-dev</p>
+                        <p class="text-xs text-gray-500">Never</p>
+                    </div>
+                </div>
+                <div class="flex items-start py-1 px-2">
+                    <img src="assets/gytree.svg" alt="" class="py-1">
+                    <div class="px-2">
+                        <p class="font-semibold text-sm">gytree-prod</p>
+                        <p class="text-xs text-gray-500">Jul 8,2024,12:19 PM</p>
+                    </div>
+                </div>
+                <div class="flex items-start py-1 px-2">
+                    <img src="assets/iq_auditor.svg" alt="" class="py-1">
+                    <div class="px-2">
+                        <p class="font-semibold text-sm">iq-auditor-prod</p>
+                        <p class="text-xs text-gray-500">Jul 1,2024,12:25 PM</p>
+                    </div>
+                </div>
+                <div class="flex items-start py-1 px-2">
+                    <img src="assets/nirav_learn.svg" alt="" class="py-1">
+                    <div class="px-2">
+                        <p class="font-semibold text-sm">Nirav-learn</p>
+                        <p class="text-xs text-gray-500">Jul 24,2024,7:04 PM</p>
+                    </div>
+                </div>
+                <div class="flex items-start py-1 px-2">
+                    <img src="assets/gytree.svg" alt="" class="py-1">
+                    <div class="px-2">
+                        <p class="font-semibold text-sm">Wawf-cloud-prod</p>
+                        <p class="text-xs text-gray-500">Jul 7,2024,10:39 AM</p>
+                    </div>
+                </div>
+                <div class="flex items-start py-1 px-2">
+                    <img src="assets/iq_auditor.svg" alt="" class="py-1">
+                    <div class="px-2">
+                        <p class="font-semibold text-sm">wawf-cloud-wawf-api</p>
+                        <p class="text-xs text-gray-500">Jul 7,2024,10:39 AM</p>
+                    </div>
+                </div>
+                <div class="flex items-start py-1 px-2">
+                    <img src="assets/nirav_learn.svg" alt="" class="py-1">
+                    <div class="px-2">
+                        <p class="font-semibold text-sm">wawf-dev</p>
+                        <p class="text-xs text-gray-500">Jul 22,2024,1:18 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="py-2">
+                <div class="flex items-center lg:pt-5 lg:py-0 py-2 pb-1">
+                    <img src="assets/recents.svg" alt="">
+                    <p class="px-2 font-bold">Recents</p>
+                </div>
+                <div class="flex items-start py-1 px-2">
+                    <img src="assets/iq_auditor.svg" alt="" class="py-1">
+                    <div class="px-2">
+                        <p class="font-semibold text-sm">localhost:27017</p>
+                        <p class="text-xs text-gray-500">Jun 28,2024,5:21 AM</p>
+                    </div>
+                </div>
+                <div class="flex items-start py-1 px-2">
+                    <img src="assets/iq_auditor.svg" alt="" class="py-1">
+                    <div class="px-2">
+                        <p class="font-semibold text-sm">localhost:27017</p>
+                        <p class="text-xs text-gray-500">Jul 2,2024,2:09 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- middle portion -->
+     <div class="lg:w-[50%] w-full py-12 px-4">
+        <div class="border rounded-3xl shadow-xl md:p-6 p-3">
+            <div class="flex md:flex-row flex-col md:justify-between justify-center items-center">
+                <div>
+                    <p class="pb-2 font-semibold text-xl">New Connection</p>
+                    <p class="text-xs text-gray-500">Connect a MongoDB deployment</p>
+                </div>
+                <div class="flex flex-col items-center md:pt-0 pt-2">
+                    <img src="assets/saved_con.svg" alt="">
+                    <p class="text-xs font-semibold">FAVOURITE</p>
+                </div>
+            </div>
+            <div class="flex justify-between pt-4 pb-1">
+                <div class="flex items-center">
+                    <p class="font-semibold pr-2 text-sm">URI</p>
+                    <img src="assets/uri.svg" alt="" class="bg-gray-500 rounded-full w-fit h-fit p-0.5">
+                </div>
+                <div class="flex items-center">
+                    <p class="font-semibold pr-2 text-sm">Edit Connection String</p>
+                    <img src="assets/toggle.svg" alt="">
+                </div>
+            </div>
+            <div>
+                <textarea placeholder="mongodb://localhost:27017//" rows="3" class="w-full rounded text-xs"></textarea>
+            </div>
+            <div class="flex items-center">
+                <p class="font-bold">&#x232A;</p>
+                <p class="font-semibold text-sm pl-2">Advanced Connection Options</p>
+            </div>
+            <div class="flex justify-between items-center py-6">
+                <div>
+                    <button class="border border-black rounded py-1 px-2 text-xs font-semibold">Save</button>
+                </div>
+                <div>
+                    <button class="border border-green-800 rounded py-1 px-2 text-xs font-semibold text-green-800">Save & Connect</button>
+                    <button class="rounded bg-green-800 py-1.5 px-2 text-xs font-semibold text-white">Connect</button>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <!-- right portion -->
+      <div class="lg:w-[30%] w-full lg:pt-12 lg:pr-20 lg:px-0 px-5">
+        <div class="bg-sky-100 p-4">
+            <p class="font-bold text-sm">
+                New to Compass and don't have a cluster?
+            </p>
+            <p class="text-xs py-2">
+                If you don't already have a cluster, you can create one for free using 
+                    <span class="inline text-blue-600">
+                        MongoDB Atlas
+                    </span>
+            </p>
+            <button class="border border-green-800 rounded py-1 px-2 text-xs font-semibold text-green-800 bg-white">CREATE FREE CLUSTER</button>
+        </div>
+        <div class="p-4">
+            <p class="font-bold text-sm">
+                How do I find my connection string in Atlas?
+            </p>
+            <p class="text-xs pt-4">
+                    If you don't already have a cluster, go to the Cluster view. Click the 'Connect' button for the cluster to which you wish to connect.
+            </p>
+            <div class="flex">
+                <p class="text-xs text-blue-600">See example</p>
+                <img src="assets/arrow.svg" alt="">
+            </div>
+        </div>
+        <div class="p-4">
+            <p class="font-bold text-sm">
+                How do I format my connection string?
+            </p>
+            <div class="flex">
+                <p class="text-xs text-blue-600">See example</p>
+                <img src="assets/arrow.svg" alt="">
+            </div>
+        </div>
+      </div>
+</body>
+</html>

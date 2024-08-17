@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <title>Document</title>
+</head>
+
+<body class="m-0 p-6 md:w-1/2 w-full">
+    <p class="text-center text-2xl font-semibold">Package Status</p>
+
+    <!-- first div -->
+    <div class="p-6 relative border-l-4 border-green-500">
+        <div class="bg-green-600 text-white rounded-lg p-4">
+            <p class="font-semibold">Package Booked</p>
+            <p class="text-sm">21 July 2021, 04:30 PM</p>
+        </div>
+        <div class="absolute left-[-15px] top-[50px] h-[25px] w-[25px] border-4 border-green-500 rounded-full bg-white flex items-center justify-center">
+            <p class="text-sm text-green-600 font-semibold">&#10003; </p>
+        </div>
+    </div> 
+
+    <!-- second div -->
+    <div class="p-6 relative border-l-4 border-green-500">
+        <div class="bg-green-600 text-white rounded-lg p-4">
+            <p class="font-semibold">Out for Delivery</p>
+            <p class="text-sm">22 July 2021, 01:00 PM</p>
+        </div>
+        <div class="absolute left-[-15px] top-[50px] h-[25px] w-[25px] border-4 border-green-500 rounded-full bg-white flex items-center justify-center">
+            <p class="text-sm text-green-600 font-semibold">&#10003; </p>
+        </div>
+    </div> 
+
+    <!-- third div -->
+    <div class="p-6 relative border-l-4 border-red-500">
+        <div class="bg-red-600 text-white rounded-lg p-4">
+            <p class="font-semibold">Cancelled</p>
+            <p class="text-sm">Customer cancelled the order</p>
+        </div>
+        <div class="absolute left-[-15px] top-[50px] h-[25px] w-[25px] border-4 border-red-500 rounded-full bg-white flex justify-center">
+            <p class="text-xs text-red-600">&#x274C;</p>
+        </div>
+    </div> 
+
+    <!-- fourth div -->
+    <div class="p-6 relative border-l-4 border-gray-300">
+        <div class="bg-gray-300 text-white rounded-lg px-4 py-7">
+            <p class="font-semibold text-gray-600">Delivered</p>
+        </div>
+        <div class="absolute left-[-15px] top-[50px] h-[25px] w-[25px] border-4 border-gray-300 rounded-full bg-white flex items-center justify-center">
+            <p class="text-sm text-white font-semibold bg-gray-400 rounded-full h-[17px] w-[17px] flex items-center justify-center">&excl;</p>
+        </div>
+    </div> 
+</body>
+
+</html>

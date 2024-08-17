@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <title>Document</title>
+</head>
+
+<body class="w-full h-full flex md:p-10 px-2 py-10">
+    <div class="w-2/5 text-4xl font-normal">LOGO</div>
+    <div class="w-3/5 flex">
+        <!-- home -->
+        <div>
+            <span class="pr-1 pt-1 font-semibold">HOME</span>
+        </div>
+
+        <!-- dropdown menu -->
+        <div class="group inline-block">
+            <button class="px-3  flex items-center min-w-32">
+                <span class="pr-1 font-semibold">DROPDOWN MENU</span>
+                <span>
+                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                    </svg>
+                </span>
+            </button>
+            <ul class="transform scale-0 group-hover:scale-100 absolute transition duration-150 ease-in-out origin-top min-w-32">
+                <li class="px-3 py-1 border-b">
+                    <button class="w-full text-left flex items-center">
+                        <span class="pr-1 flex-1">Menu Level 2</span>
+                        <span class="mr-auto">
+                            <svg class="fill-current h-4 w-4"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                            </svg>
+                        </span>
+                    </button>
+                </li>
+                <li class="relative px-3 py-1 border-b">
+                    <button class="w-full text-left flex items-center">
+                        <span class="pr-1 text-red-500">Menu Level 2</span>
+                        <span class="mr-auto">
+                            <svg class="fill-red-500 h-4 w-4 transition duration-150 ease-in-out"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                            </svg>
+                        </span>
+                    </button>
+                    <ul
+                        class="absolute top-0 right-0 transition duration-150 ease-in-out origin-top-left min-w-32">
+                        <li class="relative px-3 py-1 border-b">
+                            <button class="w-full text-left flex items-center">
+                                <span class="pr-1 text-red-500">Menu Level 3</span>
+                                <span class="mr-auto">
+                                    <svg class="fill-red-500 h-4 w-4 transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                        <path
+                                            d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                    </svg>
+                                </span>
+                            </button>
+                            <ul class="absolute top-0 right-0 transition duration-150 ease-in-out origin-top-left min-w-32">
+                                <li class="px-3 py-1 border-b">Menu 2</li>
+                                <li class="px-3 py-1 border-b">Menu 3</li>
+                                <li class="px-3 py-1 border-b">Menu 4</li>
+                                <li class="px-3 py-1 border-b">Menu 5</li>
+                                <li class="px-3 py-1 border-b">Menu 1</li>
+                            </ul>
+                        </li>
+                        <li class="px-3 py-1 border-b">Link 1</li>
+                        <li class="px-3 py-1 border-b">Link 2</li>
+                        <li class="px-3 py-1 border-b">Link 3</li>
+                        <li class="px-3 py-1 border-b">Link 4</li>
+                        <li class="px-3 py-1 border-b">Link 5</li>
+                    </ul>
+                </li>
+                <li class="px-3 py-1 border-b">
+                    <button class="w-full text-left flex items-center">
+                        <span class="pr-1 flex-1">Menu Level 2</span>
+                        <span class="mr-auto">
+                            <svg class="fill-current h-4 w-4"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                            </svg>
+                        </span>
+                    </button>
+                </li>
+                <li class="rounded-sm px-3  border-b">Link 1</li>
+                <li class="rounded-sm px-3  border-b">Link 2</li>
+                <li class="rounded-sm px-3  border-b">Link 3</li>
+                <li class="rounded-sm px-3  border-b">Link 4</li>
+                <li class="rounded-sm px-3  border-b">Link 5</li>
+            </ul>
+        </div>
+
+        <!-- mega menu -->
+        <div>
+            <button
+                class="px-3  flex items-center min-w-32">
+                <span class="pr-1 font-semibold">MEGA MENU</span>
+                <span>
+                    <svg class="fill-current h-4 w-4 transform group-hover:-rotate-180
+                transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                    </svg>
+                </span>
+        </button>
+        </div>
+
+        <!-- mega menu 2 -->
+        <div>
+            <button class="px-3  flex items-center min-w-32">
+                <span class="pr-1 font-semibold">MEGA MENU 2</span>
+                <span>
+                    <svg class="fill-current h-4 w-4 transform group-hover:-rotate-180
+                transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                    </svg>
+                </span>
+        </button>
+        </div>
+
+        <!-- search icon -->
+        <div>
+            <img src="assets/search.svg" alt="">
+        </div>
+
+        <style>
+            /* since nested groupes are not supported we have to use 
+       regular css for the nested dropdowns 
+    */
+            li>ul {
+                transform: translatex(100%) scale(0)
+            }
+
+            li:hover>ul {
+                transform: translatex(101%) scale(1)
+            }
+        </style>
+
+    </div>
+</body>
+
+</html>

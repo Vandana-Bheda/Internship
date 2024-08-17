@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <title>Document</title>
+
+    <style>        
+        .para1 {
+            display: none;
+        }
+
+        .demo1:hover {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+            height: 170px;
+            width: 210px;
+            background-color: #008000;
+            color: #ffffff;
+
+            .para1 {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body class="flex justify-center p-10">
+    <div class="w-1/5 relative">
+        <div class="flex gap-3">
+            <div class="p-2 bg-sky-300 demo1 h-fit w-fit">
+                <p>Demo1</p>
+                <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, tempora.</p>
+            </div>
+            <div class="p-2 bg-sky-300 demo1 h-fit w-fit">
+                <p>Demo2</p>
+                <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, tempora.</p>
+            </div>
+            <div class="p-2 bg-sky-300 demo1 h-fit w-fit">
+                <p>Demo3</p>
+                <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, tempora.</p>
+            </div>
+        </div>
+        <div class="flex gap-3 mt-3">
+            <div class="p-2 bg-sky-300 demo1 h-fit w-fit">
+                <p>Demo4</p>
+                <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, tempora.</p>
+            </div>
+            <div class="p-2 bg-sky-300 demo1 h-fit w-fit">
+                <p>Demo5</p>
+                <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, tempora.</p>
+            </div>
+            <div class="p-2 bg-sky-300 demo1 h-fit w-fit">
+                <p>Demo6</p>
+                <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, tempora.</p>
+            </div>
+        </div>
+        <div class="flex gap-3 mt-3">
+            <div class="p-2 bg-sky-300 demo1 h-fit w-fit">
+                <p>Demo7</p>
+                <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, tempora.</p>
+            </div>
+            <div class="p-2 bg-sky-300 demo1 h-fit w-fit">
+                <p>Demo8</p>
+                <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, tempora.</p>
+            </div>
+            <div class="p-2 bg-sky-300 demo1 h-fit w-fit">
+                <p>Demo9</p>
+                <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, tempora.</p>
+            </div>
+        </div>
+        <div class="flex gap-3 mt-3">
+            <div class="p-1 bg-sky-300 demo1 h-fit w-fit">
+                <p>Demo10</p>
+                <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, tempora.</p>
+            </div>
+            <div class="p-1 bg-sky-300 demo1 h-fit w-fit">
+                <p>Demo11</p>
+                <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, tempora.</p>
+            </div>
+            <div class="p-1 bg-sky-300 demo1 h-fit w-fit">
+                <p>Demo12</p>
+                <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, tempora.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <title>Document</title>
+</head>
+
+<body style="margin: 0; padding: 0; width: 100%;">
+    <nav>
+        <!-- nav 1 -->
+        <div class="flex md:px-10 px-2 p-2">
+            <img src="assets/heart.svg" alt="" class="md:pr-8 pr-3">
+            <p class="md:pr-8 pr-3">Pro</p>
+            <p class="md:pr-8 pr-3">Teams</p>
+            <p class="md:pr-8 pr-3">Pricing</p>
+            <p class="md:pr-8 pr-3">Documentation</p>
+        </div>
+
+        <!-- nav 2 -->
+        <div class="flex md:px-10 px-2 p-4 border-y shadow-lg">
+            <div>
+                <p class="font-bold text-2xl">npm</p>
+            </div>
+            <div class="md:block hidden w-[70%]">
+                <div class="flex px-6">
+                    <button class="flex p-2 bg-gray-100 w-full">
+                        <img src="assets/search.svg" alt="">
+                        <p class="text-sm text-gray-500 px-2">Search Packages</p>
+                    </button>
+                    <button class="text-sm bg-black py-2 px-4 text-white">
+                        Search
+                    </button>
+                </div>
+            </div>
+            <div class="md:hidden block w-[30%]"></div>
+            <div class="text-sm py-2 px-4 border">Sign up</div>
+            <div class="pl-6 p-2 text-sm">sign in</div>
+        </div>
+    </nav>
+
+    <main class="lg:px-28 md:px-6 px-2 md:py-10 py-4">
+
+        <!-- first row -->
+        <div class="flex">
+            <p class="font-bold pr-4">@wppconnect/wa-js</p>
+            <div class="relative">
+                <p class="text-xs px-1 p-1 text-white z-10 absolute">TS</p>
+                <div class="absolute p-2 bg-blue-500 bottom-[6px] left-[1px] z-0"></div>
+            </div>
+        </div>
+        <div class="flex">
+            <p class="text-sm">3<span class="font-bold">.</span>8<span class="font-bold">.</span>0</p>
+            <img src="assets/dot.svg" alt="">
+            <p class="text-sm">Public</p>
+            <img src="assets/dot.svg" alt="">
+            <p class="text-sm">Published 4 days ago</p>
+        </div>
+
+        <!-- second row -->
+        <div class="flex py-4">
+            <div class="flex bg-orange-100 p-2 md:justify-center justify-center border-b-2 border-orange-400 w-[20%]">
+                <img src="assets/readme.svg" alt="" class="w-fit h-fit">
+                <p class="text-sm pl-2 text-orange-700 md:block hidden">Readme</p>
+            </div>
+            <div class="flex p-2 md:justify-center justify-center border-b-2 border-red-500 w-[20%]">
+                <img src="assets/code.svg" alt="" class="w-fit h-fit">
+                <p class="text-sm pl-2 text-red-700 md:block hidden">Code</p>
+                <p class="text-green-700 border border-green-700 rounded-full px-2 ml-2 text-xs md:block hidden">Beta
+                </p>
+            </div>
+            <div class="flex p-2 md:justify-center justify-center border-b-2 border-purple-500 w-[20%]">
+                <img src="assets/dependancies.svg" alt="" class="w-fit h-fit">
+                <p class="text-sm pl-2 text-purple-700 md:block hidden">0 Dependancies</p>
+            </div>
+            <div class="flex p-2 md:justify-center justify-center border-b-2 border-blue-500 w-[20%]">
+                <img src="assets/dependents.svg" alt="" class="w-fit h-fit">
+                <p class="text-sm pl-2 text-blue-700 md:block hidden">17 Dependents</p>
+            </div>
+            <div class="flex p-2 md:justify-center justify-center border-b-2 border-sky-400 w-[20%]">
+                <img src="assets/version.svg" alt="" class="w-fit h-fit">
+                <p class="text-sm pl-2 text-sky-500 md:block hidden">143 Versions</p>
+            </div>
+        </div>
+
+        <!-- third row -->
+        <div class="flex lg:flex-row flex-col">
+            <!-- left container -->
+            <div class="lg:w-[70%] w-full lg:pr-20 pr-0">
+                <p class="text-xl font-bold">WPPConnect/WA-JS</p>
+                <div class="flex md:flex-row flex-col md:py-6 py-0">
+                    <div class="flex items-center">
+                        <p class="text-white"><span class="bg-gray-700 rounded-s text-xs py-[2px] px-[6px]">npm</span><span
+                                class="bg-green-500 rounded-e text-xs py-[2px] px-[6px]">v3.8.0</span>
+                        </p>
+                        <p class="text-white pl-1"><span
+                                class="bg-gray-700 rounded-s text-xs py-[2px] px-[6px]">downloads</span><span
+                                class="bg-green-500 rounded-e text-xs py-[2px] px-[6px]">43k/month</span>
+                        </p>
+                    </div>
+                    <div class="flex md:py-0 py-1">
+                        <p class="text-white md:pl-1 pl-0"><span
+                                class="bg-gray-700 rounded-s text-xs py-[2px] px-[6px]">issue resolution</span><span
+                                class="bg-green-500 rounded-e text-xs py-[2px] px-[6px]">0 s</span>
+                        </p>
+                        <p class="text-white pl-1"><span class="bg-gray-700 rounded-s text-xs py-[2px] px-[6px]">open
+                                issues</span><span class="bg-green-500 rounded-e text-xs py-[2px] px-[6px]">0 %</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="flex md:flex-row flex-col pb-6">
+                    <div class="flex">
+                        <p class="text-white"><span
+                                class="bg-gray-700 rounded-s text-xs py-[2px] px-[6px]">build</span><span
+                                class="bg-green-500 rounded-e text-xs py-[2px] px-[6px]">passing</span>
+                        </p>
+                        <p class="text-white pl-1"><span
+                                class="bg-gray-700 rounded-s text-xs py-[2px] px-[6px]">build</span><span
+                                class="bg-green-500 rounded-e text-xs py-[2px] px-[6px]">passing</span>
+                        </p>
+                    </div>
+                    <div class="flex md:py-0 py-1">
+                        <p class="text-white md:pl-1 pl-0"><span
+                                class="bg-gray-700 rounded-s text-xs py-[2px] px-[6px]">lint</span><span
+                                class="bg-green-500 rounded-e text-xs py-[2px] px-[6px]">passing</span>
+                        </p>
+                        <p class="text-white pl-1 flex"><span
+                                class="bg-gray-700 rounded-s text-xs align-middle flex px-[6px]"><img
+                                    src="assets/release-it.svg" alt=""></span><span
+                                class="bg-pink-500 rounded-e text-xs py-[2px] px-[6px]">release-it</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-200 p-2 border-l-8 border-gray-400">
+                    <p class="px-4">
+                        WPPConnect/WA-JS is an open-source project with the aim of exporting functions from WhatsApp
+                        Web, which can be used to support the creation of any interaction, such as customer service,
+                        media sending, intelligence recognition based on phrases artificial and many other things, use
+                        your imagination...
+                    </p>
+                </div>
+
+                <p class="p-2 border-b text-xl font-bold">Our online channels</p>
+
+                <div class="flex md:flex-row flex-col py-2">
+                    <div class="flex">
+                        <div class="flex pr-1 items-center">
+                            <span class="flex bg-gray-700 rounded-s text-xs text-white px-1 py-[2px] items-center">
+                                <img src="assets/discord.svg" alt="" class="pr-1">
+                                Discord
+                            </span>
+                            <span class="rounded-e text-xs text-white bg-violet-600 py-[4px] px-1">
+                                217 online
+                            </span>
+                        </div>
+                        <div class="flex pr-1 items-center">
+                            <span class="flex bg-gray-700 rounded-s text-xs text-white px-1 py-[2px] items-center">
+                                <img src="assets/telegram.svg" alt="" class="pr-1">
+                                Telegram
+                            </span>
+                            <span class="rounded-e text-xs text-white bg-sky-600 py-[4px] px-1">
+                                Group
+                            </span>
+                        </div>
+                    </div>
+                    <div class="flex md:pt-0 pt-2">
+                        <div class="flex pr-1 items-center">
+                            <span class="flex bg-gray-700 rounded-s text-xs text-white px-1 py-[2px] items-center">
+                                <img src="assets/whatsapp.svg" alt="" class="pr-1">
+                                Whatsapp
+                            </span>
+                            <span class="rounded-e text-xs text-white bg-green-600 py-[4px] px-1">
+                                Group
+                            </span>
+                        </div>
+                        <div class="flex pr-1">
+                            <span class="flex border rounded text-xs px-1 py-[2px] shadow-inner items-center">
+                                <img src="assets/youtube.svg" alt="" class="pr-1">
+                                YouTube
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="font-semibold py-2">Top Contributors (last 45 days) widget</p>
+                <div class="flex py-4 border-y">
+                    <div class="flex">
+                        <img src="assets/user1.svg" alt="" class="z-[0]">
+                        <img src="assets/user2.svg" alt="" class="z-[1] ml-[-5px]">
+                        <img src="assets/user3.svg" alt="" class="z-[2] ml-[-5px]">
+                        <img src="assets/user4.svg" alt="" class="z-[3] ml-[-5px]">
+                        <img src="assets/user5.svg" alt="" class="z-[4] ml-[-5px]">
+                        <img src="assets/user6.svg" alt="" class="z-[5] ml-[-5px]">
+                        <img src="assets/user7.svg" alt="" class="z-[6] ml-[-5px]">
+                        <img src="assets/user1.svg" alt="" class="z-[7] ml-[-5px]">
+                    </div>
+                    <div class="md:block hidden">
+                        <div class="flex">
+                            <img src="assets/user2.svg" alt="" class="z-[8] ml-[-5px]">
+                            <img src="assets/user3.svg" alt="" class="z-[8] ml-[-5px]">
+                            <img src="assets/user4.svg" alt="" class="z-[8] ml-[-5px]">
+                            <img src="assets/user5.svg" alt="" class="z-[8] ml-[-5px]">
+                            <img src="assets/user6.svg" alt="" class="z-[8] ml-[-5px]">
+                            <img src="assets/user7.svg" alt="" class="z-[8] ml-[-5px]">
+                        </div>
+                    </div>
+                    <div class="xl:block lg:hidden md:block hidden">
+                        <div class="flex">
+                            <img src="assets/user1.svg" alt="" class="z-[8] ml-[-5px]">
+                            <img src="assets/user2.svg" alt="" class="z-[8] ml-[-5px]">
+                            <img src="assets/user3.svg" alt="" class="z-[8] ml-[-5px]">
+                            <img src="assets/user4.svg" alt="" class="z-[8] ml-[-5px]">
+                        </div>
+                    </div>
+                </div>
+
+                <p class="text-xs py-6 font-semibold">Check also our <span class="text-red-600">Public Dashboard</span>
+                    powered by <span class="text-red-600">devActivity</span></p>
+            </div>
+
+            <!-- right container -->
+            <div class="lg:w-[30%] w-full">
+                <p class="font-semibold pb-2">Install</p>
+                <div class="p-2 border border-gray-500 lg:w-full md:w-1/2 w-full rounded-lg flex justify-between">
+                    <div class="flex">
+                        <img src="assets/right-arrow.svg" alt="">
+                        <p class="px-1 text-sm">npm i @wppconnect/wa-js</p>
+                    </div>
+                    <img src="assets/copy.svg" alt="">
+                </div>
+
+                <div class="flex py-4 font-semibold">
+                    <img src="assets/download.svg" alt="">
+                    <p class="pl-1">Weekly Downloads</p>
+                </div>
+
+                <div class="border-b-2 py-1 w-full flex justify-between items-end">
+                    <p class="font-semibold text-lg">6,763</p>
+                    <img src="assets/statistics.avif" alt="" class="w-3/5">
+                </div>
+
+                <div class="flex w-full py-4 border-b-2">
+                    <div class="w-1/2">
+                        <p class="pb-2">Version</p>
+                        <p class="font-semibold text-xl">3.8.0</p>
+                    </div>
+                    <div class="w-1/2">
+                        <p class="pb-2">License</p>
+                        <p class="font-semibold text-xl">Apache-2.0</p>
+                    </div>
+                </div>
+
+                <div class="flex w-full py-4 border-b-2">
+                    <div class="w-1/2">
+                        <p class="pb-2">Unpacked Size</p>
+                        <p class="font-semibold text-xl">1.17MB</p>
+                    </div>
+                    <div class="w-1/2">
+                        <p class="pb-2">Total Files</p>
+                        <p class="font-semibold text-xl">629</p>
+                    </div>
+                </div>
+
+                <div class="w-full py-4 border-b-2">
+                    <p class="pb-2">Last publish</p>
+                    <p class="font-semibold text-xl">4 days ago </p>
+                </div>
+                
+                <div class="py-4">
+                    <p>Collaborators</p>
+                    <div class="flex">
+                        <img src="assets/collab1.svg" alt="">
+                        <img src="assets/collab2.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="bg-gray-100 border-gray-400 border rounded-lg flex justify-center w-full p-2">
+                    <img src="assets/right-arrow.svg" alt="">
+                    <p>_Try on RunKit</p>
+                </div>  
+            </div>
+        </div>
+        </div>
+    </main>
+</body>
+
+</html>

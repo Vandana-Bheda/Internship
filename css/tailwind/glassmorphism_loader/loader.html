@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <title>Document</title>
+    <style>
+        .container::before {
+            content: "";
+            width: 160px;
+            height: 60px;
+            background: #ffffff33;
+            border: 2px solid #ffffff9c;
+            position: absolute;
+            border-bottom-left-radius:  10px;
+            border-bottom-right-radius:  10px;
+            border-top: none;
+            backdrop-filter: blur(5px);
+            animation: blur_div 2s linear infinite;
+        }
+
+        .container div {
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            z-index: -1;
+            animation: dots 2s linear infinite;
+            margin: 0.2em;
+        }
+
+        .container div:nth-child(1) {
+            background: #cbcaca;
+        }
+        .container div:nth-child(2) {
+            background: #c3e908;
+            animation-delay: 0.25s;
+        }
+
+        .container div:nth-child(3) {
+            background: #f10d49;
+            animation-delay: 0.50s;
+        }
+
+        .container div:nth-child(4) {
+            background: #795dcf;
+            animation-delay: 0.75s;
+        }
+
+        @keyframes dots {
+
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-80px);
+            }
+        }
+
+        @keyframes blur_div {
+
+            0%
+            {
+                transform: rotate(-10deg);
+            }
+
+            50%{
+                transform: rotate(10deg);
+            }
+
+            100%
+            {
+                transform: rotate(-10deg);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-black h-screen flex justify-center items-center">
+    <div class="container relative flex justify-center items-center">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+        <div class="dot3"></div>
+        <div class="dot4"></div>
+    </div>
+</body>
+
+</html>

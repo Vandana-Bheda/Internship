@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <title>Document</title>
+
+    <style>
+        .active {
+            background-color: #fff;
+            color: #0909db;
+        }
+
+        .active2{
+            background-color: #c4c4c47e;
+        }
+
+    </style>
+</head>
+
+<body class="w-full h-screen m-0 p-0">
+    <nav class="h-10 bg-gray-100 flex items-center px-4 text-sm">
+        <a href="#">Dashboard</a>
+        <i class="fa-solid fa-angle-right pl-2 text-xs text-gray-400"></i>
+    </nav>
+
+    <main class="p-6 flex">
+        <!-- left conatiner all -->
+        <div class="w-[300px] left_all">
+            <div class="text-xs font-semibold pt-2">
+                <i class="fa-solid fa-plus pr-2"></i>
+                New Item
+            </div>
+            <div class="text-xs font-semibold pt-4">
+                <i class="fa-solid fa-print pr-2"></i>
+                Build History
+            </div>
+            <div class="text-xs font-semibold pt-4">
+                <i class="fa-regular fa-circle-check pr-2"></i>
+                Project Relationship
+            </div>
+            <div class="text-xs font-semibold pt-4">
+                <i class="fa-solid fa-fingerprint pr-2"></i>
+                Check File Fingerprint
+            </div>
+            <div class="text-xs font-semibold pt-4">
+                <i class="fa-solid fa-gear pr-2"></i>
+                Manage Jenkins
+            </div>
+            <div class="text-xs font-semibold pt-4">
+                <i class="fa-solid fa-folder-closed pr-2"></i>
+                My Views
+            </div>
+            <div class="text-xs font-semibold py-4">
+                <i class="fa-solid fa-gear pr-2"></i>
+                Job Config History
+            </div>
+            <div class="py-2 text-xs">
+                <div class="border-2 border-gray-200 rounded-xl p-2">
+                    <div class="flex justify-between font-bold pb-4">
+                        <p>Build Queue</p>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <span>No builds in the queue.</span>
+                </div>
+            </div>
+            <div class="text-xs">
+                <div class="border-2 border-gray-200 rounded-xl p-2">
+                    <div class="flex justify-between font-bold pb-4">
+                        <p class="underline">Build Executor Status</p>
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+                    <span>built-in node (0 of 2 executors busy)</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- left conatiner dev -->
+        <div class="w-[300px] left_dev">
+            <div class="text-xs font-semibold pt-2">
+                <i class="fa-solid fa-plus pr-2"></i>
+                New Item
+            </div>
+            <div class="text-xs font-semibold pt-4">
+                <i class="fa-solid fa-print pr-2"></i>
+                Build History
+            </div>
+            <div class="text-xs font-semibold pt-4">
+                <i class="fa-solid fa-gear pr-2"></i>
+                Edit View
+            </div>
+            <div class="text-xs font-semibold pt-4">
+                <i class="fa-solid fa-trash-can pr-2"></i>
+                Delete View
+            </div>
+            <div class="text-xs font-semibold pt-4">
+                <i class="fa-regular fa-circle-check pr-2"></i>
+                Project Relationship
+            </div>
+            <div class="text-xs font-semibold pt-4">
+                <i class="fa-solid fa-fingerprint pr-2"></i>
+                Check File Fingerprint
+            </div>
+            <div class="text-xs font-semibold pt-4">
+                <i class="fa-solid fa-gear pr-2"></i>
+                Manage Jenkins
+            </div>
+            <div class="text-xs font-semibold pt-4">
+                <i class="fa-solid fa-folder-closed pr-2"></i>
+                My Views
+            </div>
+            <div class="text-xs font-semibold py-4">
+                <i class="fa-solid fa-gear pr-2"></i>
+                Job Config History
+            </div>
+            <div class="py-2 text-xs">
+                <div class="border-2 border-gray-200 rounded-xl p-2">
+                    <div class="flex justify-between font-bold pb-4">
+                        <p>Build Queue</p>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <span>No builds in the queue.</span>
+                </div>
+            </div>
+            <div class="text-xs">
+                <div class="border-2 border-gray-200 rounded-xl p-2">
+                    <div class="flex justify-between font-bold pb-4">
+                        <p class="underline">Build Executor Status</p>
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+                    <span>built-in node (0 of 2 executors busy)</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- right container -->
+        <div class="p-4 w-full">
+            <div class="pb-8 textarea">
+                <textarea rows="3" cols="100%" class="rounded border-gray-300"></textarea>
+                <p class="text-gray-400 text-xs">Plain text <span class="text-blue-500">Preview</span></p>
+            </div>
+
+            <!-- first row  -->
+            <div class="flex items-center justify-between w-full text-xs">
+                <div class="flex items-center bg-gray-100 w-fit p-1 rounded-full cursor-pointer">
+                    <p class="py-1 px-4 rounded-full btnClick active all_btn">All</p>
+                    <p class="px-4 py-1 rounded-full btnClick dev_btn">Dev</p>
+                    <i class="fa-solid fa-plus px-4 py-1 rounded-full btnClick"></i>
+                </div>
+                <div class="flex items-center cursor-pointer add_description">
+                    <i class="fa-solid fa-pencil pr-2"></i>
+                    <p>Add description</p>
+                </div>
+                <div class="flex items-center cursor-pointer save">
+                    <p class="text-white bg-blue-500 px-2 py-1 rounded-lg">Save</p>
+                </div>
+            </div>
+
+            <!-- main container All -->
+            <div class="py-6 cont_all">
+                <div class="p-1 bg-gray-100 rounded-lg p-1 text-xs w-full">
+                    <!-- row 1 -->
+                    <div class="flex py-2 px-3 w-full">
+                        <div class="w-[5%]">
+                            <p>s</p>
+                        </div>
+                        <div class="w-[5%]">
+                            <p>w</p>
+                        </div>
+                        <div class="w-[20%] flex items-center">
+                            <p>Name</p><i class="fa-solid fa-down-long pl-2"></i>
+                        </div>
+                        <div class="w-[20%]">
+                            <p>Last Success</p>
+                        </div>
+                        <div class="w-[20%]">
+                            <p>Last Failure</p>
+                        </div>
+                        <div class="w-[20%]">
+                            <p>Last Duration</p>
+                        </div>
+                    </div>
+                    <!-- row 2 -->
+                    <div class="flex py-2 px-3 bg-white rounded w-full">
+                        <div class="w-[5%]"><i class="fa-regular fa-folder-closed"></i></div>
+                        <div class="w-[5%]"><i class="fa-regular fa-sun"></i></div>
+                        <div class="w-[20%]">
+                            <p class="text-blue-500">DEV</p>
+                        </div>
+                        <div class="w-[20%]">
+                            <p>N/A</p>
+                        </div>
+                        <div class="w-[20%]">
+                            <p>N/A</p>
+                        </div>
+                        <div class="w-[20%]">
+                            <p>N/A</p>
+                        </div>
+                    </div>
+                    <!-- row 3-->
+                    <div class="flex py-2 px-3 bg-white rounded w-full mt-[2px]">
+                        <div class="w-[5%]"><i class="fa-regular fa-folder-closed"></i></div>
+                        <div class="w-[5%]"><i class="fa-regular fa-sun"></i></div>
+                        <div class="w-[20%]">
+                            <p class="text-blue-500">Testing</p>
+                        </div>
+                        <div class="w-[20%]">
+                            <p>N/A</p>
+                        </div>
+                        <div class="w-[20%]">
+                            <p>N/A</p>
+                        </div>
+                        <div class="w-[20%]">
+                            <p>N/A</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- main container dev -->
+            <div class="py-6 cont_dev">
+                <div class="p-1 bg-gray-100 rounded-lg p-1 text-xs w-full dev_txt">
+                    <!-- row 1 -->
+                    <div class="flex py-2 px-3 w-full">
+                        <div class="w-[5%]">
+                            <p>s</p>
+                        </div>
+                        <div class="w-[5%]">
+                            <p>w</p>
+                        </div>
+                        <div class="w-[20%] flex items-center">
+                            <p>Name</p><i class="fa-solid fa-down-long pl-2"></i>
+                        </div>
+                        <div class="w-[20%]">
+                            <p>Last Success</p>
+                        </div>
+                        <div class="w-[20%]">
+                            <p>Last Failure</p>
+                        </div>
+                        <div class="w-[20%]">
+                            <p>Last Duration</p>
+                        </div>
+                    </div>
+                    <!-- row 2 -->
+                    <div class="flex py-2 px-3 bg-white rounded w-full">
+                        <div class="w-[5%]"><i class="fa-regular fa-folder-closed"></i></div>
+                        <div class="w-[5%]"><i class="fa-regular fa-sun"></i></div>
+                        <div class="w-[20%]">
+                            <p class="text-blue-500">DEV</p>
+                        </div>
+                        <div class="w-[20%]">
+                            <p>N/A</p>
+                        </div>
+                        <div class="w-[20%]">
+                            <p>N/A</p>
+                        </div>
+                        <div class="w-[20%]">
+                            <p>N/A</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- size buttons -->
+            <div class="flex text-xs items-center cursor-pointer">
+                <p class="mr-4">Icon:</p>
+                <p class="mr-4 py-1 px-2 rounded btn_sml btn_small active2">S</p>
+                <p class="mr-4 py-1 px-2 rounded btn_sml btn_medium">M</p>
+                <p class="py-1 px-2 rounded btn_sml btn_large">L</p>
+            </div>
+        </div>
+    </main>
+
+
+    <script>
+        $(document).ready(function () {
+            $(".btnClick").click(function () {
+                $(".btnClick").removeClass("active");
+                $(this).addClass("active");
+            });
+            $(".btn_sml").click(function () {
+                $(".btn_sml").removeClass("active2");
+                $(this).addClass("active2");
+            });
+
+            $(".cont_dev").hide ();
+            $(".left_dev").hide ();
+            $(".save").hide ();
+            $(".textarea").hide();
+
+            $(".all_btn").click(function(){
+                $(".cont_all").show();
+                $(".cont_dev").hide ();
+                $(".left_all").show();
+                $(".left_dev").hide ();
+            });
+
+            $(".dev_btn").click(function(){
+                $(".cont_all").hide();
+                $(".cont_dev").show();
+                $(".left_all").hide();
+                $(".left_dev").show();
+            });
+
+            $(".btn_small").click(function(){
+                $(".dev_txt").css("font-size" , "12px")
+            });
+
+            $(".btn_medium").click(function(){
+                $(".dev_txt").css("font-size" , "14px")
+            });
+
+            $(".btn_large").click(function(){
+                $(".dev_txt").css("font-size" , "16px")
+            });
+
+            $(".add_description").click(function(){
+                $(".add_description").hide();
+                $(".save").show();
+                $(".textarea").show();
+            });
+        });
+    </script>
+</body>
+
+</html>

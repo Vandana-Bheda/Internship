@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <title>Document</title>
+
+    <style>
+        .togglemenu {
+            /* margin-right: -900%; */
+            width: 0;
+            /* overflow: hidden; */
+            /* height: 0; */
+            opacity: 0;
+            transition: 1s all;
+        }
+
+        .toggle {
+            width: 100%;
+            /* height: 300px; */
+            opacity: 1;
+            /* margin-right: 0; */
+        }
+    </style>
+</head>
+
+<body class="m-0 p-0 w-full h-fit overflow-hidden">
+    <nav class="h-20 w-full bg-green-200 flex md:justify-between items-center px-10">
+        <p class="text-5xl font-semibold flex items-center lg:w-auto w-1/2">CNav</p>
+        <div class="grid grid-cols-4 place-items-center w-full h-full">
+            <a href="#" class="text-xl lg:block hidden">Home</a>
+            <a href="#" class="text-xl lg:block hidden">About</a>
+            <a href="#" class="text-xl lg:block hidden">Blogs</a>
+            <a href="#" class="text-xl lg:block hidden">Contact Us</a>
+        </div>
+        <div class="lg:w-0 lg:hidden block"><img src="assets/nav-icon-a-svgrepo-com.svg" alt="" class="imgclick"></div>
+    </nav>
+    <div class="togglemenu">
+        <div
+        class=" w-[80%] h-[290px] flex flex-col items-center justify-between my-2 ml-auto mr-auto py-8 bg-pink-100 rounded-3xl">
+        <a href="#" class="text-xl">Home</a>
+        <a href="#" class="text-xl">About</a>
+        <a href="#" class="text-xl">Blogs</a>
+        <a href="#" class="text-xl">Contact Us</a>
+    </div>
+    </div>
+
+
+    <script>
+        $(document).ready(function () {
+            $(".imgclick").click(function () {
+                $(".togglemenu").toggleClass("toggle");
+            });
+        });
+    </script>
+</body>
+
+</html>

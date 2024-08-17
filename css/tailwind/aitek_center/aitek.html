@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <title>Document</title>
+</head>
+
+<body class="m-0 p-0 flex md:flex-row flex-col h-screen w-full">
+    <!-- left container -->
+    <div class="lg:w-[25%] md:w-2/5 w-full lg:pr-2 pr-0 md:overflow-y-scroll overflow-y-hidden md:overflow-x-hidden overflow-x-scroll md:h-auto h-[20%]">
+        <nav class="flex md:flex-col w-max flex-row">
+            <div class=" flex items-center p-1">
+                <img src="assets/logo.webp" alt="" class="w-[50px]">
+                <p class="font-bold pr-2">AITEK center</p>
+            </div>
+            <div class="p-2 mx-1 lg:w-full md:w-[90%] w-fit md:my-0 my-2 flex items-center bg-blue-100 rounded-lg">
+                <img src="assets/dashboard.svg" alt="">
+                <p class="px-2 text-blue-400">Dashboard</p>
+            </div>
+            <div class="p-2 flex items-center">
+                <img src="assets/profile.svg" alt="">
+                <p class="px-2">Profile</p>
+            </div>
+            <div class="p-2 flex items-center">
+                <img src="assets/resellers.svg" alt="">
+                <p class="px-2">Resellers</p>
+            </div>
+            <div class="p-2 flex items-center">
+                <img src="assets/dashboard.svg" alt="">
+                <p class="px-2">Product Managememnt</p>
+            </div>
+            <div class="p-2 flex items-center">
+                <p class="pr-2 md:pl-8 pl-2">Products</p>
+            </div>
+            <div class="p-2 flex items-center">
+                <p class="pr-2 md:pl-8 pl-2">Cantegories</p>
+            </div>
+            <div class="p-2 flex items-center">
+                <p class="pr-2 md:pl-8 pl-2">Tags</p>
+            </div>
+            <div class="p-2 flex items-center">
+                <p class="pr-2 md:pl-8 pl-2">Pricing</p>
+            </div>
+            <div class="p-2 flex items-center">
+                <img src="assets/quatations.svg" alt="">
+                <p class="px-2">Quatations</p>
+            </div>
+            <div class="p-2 flex items-center">
+                <img src="assets/order.svg" alt="">
+                <p class="px-2">Oeders</p>
+            </div>
+            <div class="p-2 flex items-center">
+                <img src="assets/licenses.svg" alt="">
+                <p class="px-2">Licenses & Subscriptions</p>
+            </div>
+            <div class="p-2 flex items-center">
+                <img src="assets/coupons.svg" alt="">
+                <p class="px-2">Coupons</p>
+            </div>
+            <div class="p-2 flex items-center">
+                <img src="assets/support.svg" alt="">
+                <p class="px-2">Support Tickets</p>
+            </div>
+            <div class="p-2 flex items-center">
+                <img src="assets/user_role.svg" alt="">
+                <p class="px-2">User Roles</p>
+            </div>
+            <div class="p-2 flex items-center">
+                <img src="assets/user_role.svg" alt="">
+                <p class="px-2">AITEK Team</p>
+            </div>
+            <div class="p-2 flex items-center">
+                <img src="assets/resellers.svg" alt="">
+                <p class="px-2">Customers</p>
+            </div>
+            <div class="p-2 flex items-center">
+                <img src="assets/activity-log.svg" alt="">
+                <p class="px-2">Activity Log</p>
+            </div>
+            <div class="p-2 flex items-center">
+                <img src="assets/licenses.svg" alt="">
+                <p class="px-2">Reports</p>
+            </div>
+            <div class="p-2 flex items-center">
+                <p class="pr-2 md:pl-8 pl-2">Orders</p>
+            </div>
+        </nav>
+    </div>
+
+    <!-- right container -->
+    <div class="lg:w-[75%] md:3/5 w-full overflow-y-scroll">
+        <nav class="flex justify-end items-center py-2 px-4 border-b-2">
+            <div class="px-2 md:w-fit w-1/2">
+                <button class="flex items-end border border-black p-1">
+                    <p class="text-sm"> English </p>
+                    <img src="assets/down-arrow-english.svg" alt="">
+                </button>
+            </div>
+            <div class="flex w-max items-center border-l px-2 h-fit md:w-fit w-1/2">
+                <img src="assets/profile.svg" alt="">
+                <p class="w-max px-2">Vandana</p>
+                <img src="assets/down-arrow-english.svg" alt="">
+            </div>
+        </nav>
+
+        <main class="bg-sky-50 p-6">
+            <p class="font-bold py-2">Dshboard</p>
+            <div class="relative overflow-x-scroll py-4 px-4 bg-white rounded-lg">
+                <p class="font-bold py-2">Orders</p>
+                <table class="lg:w-full w-max text-left text-xs">
+                    <tr class="border-b-2">
+                        <th class="py-3 pr-6 font-bold">
+                            Payment Status
+                        </th>
+                        <th class="py-3 px-6 font-bold">
+                            Today
+                        </th>
+                        <th class="py-3 px-6 font-bold">
+                            This Week 
+                        </th>
+                        <th class="py-3 px-6 font-bold">
+                            This Month
+                        </th>
+                        <th class="py-3 px-6 font-bold">
+                            This Year
+                        </th>
+                        <th class="py-3 px-6 font-bold">
+                            All Time
+                        </th>
+                    </tr>
+                    <tr class="border-b-2">
+                        <td class="py-3 pr-6">
+                            Pending
+                        </td>
+                        <td class="py-3 px-6">
+                            0
+                        </td>
+                        <td class="py-3 px-6">
+                            5
+                        </td>
+                        <td class="py-3 px-6">
+                            53
+                        </td>
+                        <td class="py-3 px-6">
+                            53
+                        </td>
+                        <td class="py-3 px-6">
+                            53
+                        </td>
+                    </tr>
+                    <tr class="border-b-2">
+                        <td class="py-3 pr-6">
+                            Paid
+                        </td>
+                        <td class="py-3 px-6">
+                            0
+                        </td>
+                        <td class="py-3 px-6">
+                            17
+                        </td>
+                        <td class="py-3 px-6">
+                            57
+                        </td>
+                        <td class="py-3 px-6">
+                            210
+                        </td>
+                        <td class="py-3 px-6">
+                            210
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 pr-6">
+                            Cancelled
+                        </td>
+                        <td class="py-3 px-6">
+                            0
+                        </td>
+                        <td class="py-3 px-6">
+                            0
+                        </td>
+                        <td class="py-3 px-6">
+                            0
+                        </td>
+                        <td class="py-3 px-6">
+                            0
+                        </td>
+                        <td class="py-3 px-6">
+                            0
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="flex lg:flex-row flex-col">
+                <div class="relative overflow-x-scroll pt-8 px-4 my-2 lg:mr-8 mr-0 lg:w-1/2 md-w-full bg-white rounded-lg h-fit">
+                    <p class="font-bold py-2">Registered Reseller</p>
+                    <table class="w-full text-left text-xs">
+                        <tr class="border-b-2">
+                            <td class="py-3">
+                                Last 7 days:   
+                            </td>
+                            <td class="py-3">
+                                3
+                            </td>
+                        </tr>
+                        <tr class="border-b-2">
+                            <td class="py-3">
+                                Last 14 days:   
+                            </td>
+                            <td class="py-3">
+                                6
+                            </td>
+                        </tr>
+                        <tr class="border-b-2">
+                            <td class="py-3">
+                                Last month:   
+                            </td>
+                            <td class="py-3">
+                                8
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">
+                                Last year:   
+                            </td>
+                            <td class="py-3">
+                                25
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+    
+                <div class="relative overflow-x-scroll py-8 px-4 my-2 lg:w-1/2 md-w-full bg-white rounded-lg h-fit">
+                    <p class="font-bold py-2">Bestsellers</p>
+                    <table class="md:w-full w-max text-left text-xs">
+                        <tr class="border-b-2">
+                            <th class="py-3 pr-4">
+                                Product   
+                            </th>
+                            <th class="py-3 px-4">
+                                Total quantity
+                            </th>
+                            <th class="py-3 px-4">
+                                Total order amount
+                            </th>
+                        </tr>
+                        <tr class="border-b-2">
+                            <td class="py-3 pr-4">
+                                Kaspersky Optimum Security  
+                            </td>
+                            <td class="py-3 px-4">
+                                3000
+                            </td>
+                            <td class="py-3 px-4">
+                                377.00
+                            </td>
+                        </tr>
+                        <tr class="border-b-2">
+                            <td class="py-3 pr-4">
+                                Kaspersky Threat Data Feeds - Network Security IP  
+                            </td>
+                            <td class="py-3 px-4">
+                                1504
+                            </td>
+                            <td class="py-3 px-4">
+                                46.00
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 pr-4">
+                                Kaspersky Managed Detection and Response Expert Add-on   
+                            </td>
+                            <td class="py-3 px-4">
+                                999
+                            </td>
+                            <td class="py-3 px-4">
+                                203.70
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

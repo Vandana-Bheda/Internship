@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>ChangeText on click</title>
+</head>
+<body>
+    <p>Hello! To see the magic click button</p><br>
+    <button>Click Me</button>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p").text("Text Changed");
+            });
+        });
+    </script>
+</body>
+</html>

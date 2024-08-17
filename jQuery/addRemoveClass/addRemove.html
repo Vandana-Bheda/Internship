@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>addRemove on click</title>
+    <style>
+        p{
+            padding: 20px;
+        }
+
+        .change{
+            background-color: papayawhip;
+        }
+    </style>
+</head>
+<body>
+    <p class="change">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, ducimus? Unde sequi non modi. Eos nobis ex dolore neque temporibus aliquam animi, provident debitis perspiciatis, earum iusto officia voluptatem quam. Quibusdam qui quisquam debitis ducimus vel deserunt aliquam impedit, eius doloremque vero cumque distinctio facilis neque aperiam asperiores quo beatae?</p>
+    <button>Click Me</button>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p").toggleClass("change");
+            });
+        });
+    </script>
+</body>
+</html>

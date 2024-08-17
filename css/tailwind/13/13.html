@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <title>Document</title>
+</head>
+<body class="h-full w-full m-0 p-0">
+    <!-- navigation bar -->
+    <nav class="w-full h-fit flex justify-between py-4 lg:px-14 md:px-10 px-6">
+        <div class="md:w-[30%] w-[40%]">
+            <img src="assets/figma_logo.png" alt="">
+        </div>
+        <div class="lg:block md:block hidden w-[50%] content-center">
+            <ul class="flex justify-between">
+                <li>Home</li>
+                <li>Product</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="md:w-[20%] w-fit flex justify-end">
+            <div class="w-fit content-center md:pr-0 pr-2">
+                <button class="text-sm bg-blue-500 hover:bg-blue-700 text-white md:py-2 py-1 md:px-4 px-3 rounded-full">
+                    Sign Up
+                  </button>
+            </div>
+            <div class="float-right lg:hidden md:hidden content-center">
+                <img src="assets/vector_nav.png" alt="">
+            </div>
+        </div>
+    </nav>
+
+    <!-- main container -->
+    <main class="w-full h-fit">
+       <div class="flex flex-col">
+        <!-- container 1 -->
+        <div class="w-full h-fit">
+            <div class="flex flex-col w-full justify-center items-center h-full py-6">
+                <p class="text-4xl font-bold w-full text-center py-6">Lightning fast prototyping</p>
+                <p class="w-2/5 text-center">Most calendars are designed for teams. Slate is designed for   freelancers who want a simple way to plan their schedule.</p>
+            </div>
+            <div class="bg-[url('assets/Shapes.png')] h-[300px] object-contain md:object-scale-down text-center m-auto h-fit bg-no-repeat">
+                <div class="py-6">
+                    <button class="text-sm bg-blue-500 hover:bg-blue-700 text-white md:py-2 py-1 md:px-4 px-3 rounded-full">
+                        Try For Free
+                      </button>
+                </div>
+                <div class="w-full">
+                    <img src="assets/Frame 3.png" alt="" class="object-cover w-full">
+                </div>
+            </div>
+        </div>
+
+        <!-- container 2 -->
+        <div class="bg-[#0285E4] text-white">
+            <div>
+                <p class="text-center text-2xl font-semibold">Fastest way to navigate</p>
+            </div>
+            <div class="flex md:flex-row flex-col justify-around md:py-10 py-0">
+                <div class="py-4 px-8">
+                    <img src="assets/Card_1.png" alt="">
+                </div>
+                <div class="py-4 px-8">
+                    <img src="assets/Card_2.png" alt="">
+                </div>
+            </div>
+            <div class="justify-center flex md:py-10 py-4">
+                <button class="text-sm text-blue-500 hover:bg-blue-100 bg-white py-2 px-6 rounded-full">
+                    Try For Free
+                  </button>
+            </div>
+        </div>
+
+        <!-- container 3 -->
+         <div class="w-full flex md:flex-row flex-col bg-[#E1F1FD]">
+            <div class="md:w-1/2 w-full content-center px-4 py-10">
+                <div class="px-4">
+                    <p class="text-3xl font-bold md:text-left text-center ">OpenType features and Variable fonts</p>
+                    <p class="py-4 md:text-left text-center">Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.</p>
+                </div>
+                <div class="flex md:flex-row flex-col md:justify-start justify-center px-4">
+                    <div class="md:w-fit w-full">
+                        <button class="text-sm text-blue-500 hover:bg-blue-100 bg-white py-2 px-6 rounded-full md:w-full w-full">
+                            Enter Your Address Email
+                        </button>
+                    </div>
+                    <div class="md:px-3 px-0 md:py-0 py-2 md:w-fit w-full">
+                        <button class="text-sm bg-blue-500 hover:bg-blue-700 text-white py-2 px-6 rounded-full md:w-fit w-full">
+                            Subscribe
+                          </button>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2 w-full content-center">
+                <img src="assets/iPhoneX - White.png" alt="" class="md:block hidden">
+                <img src="assets/iPhoneX - White_2.png" alt="" class="md:hidden block">
+            </div>
+         </div>
+
+         <!-- container 4 -->
+         <div class="content-center md:px-28 px-10 md:py-14 py-4 flex flex-col justify-center items-center">
+            <div class="text-center px-2 w-4/5">
+                <p class="text-3xl font-bold ">Work better together</p>
+                <p class="text-xs text-gray-500 py-8 text-center md:block hidden">Being a freelancer is a rollercoaster of emotions. We built Slate to keep your freelance business less stressful. We'd love to show you what we're building...</p>
+                <p class="text-xs text-gray-500 py-8 text-center md:hidden block">Being a freelancer is a rollercoaster of emotions. We built Slate to keep your freelance business less stressful.</p>
+            </div>
+            <img src="assets/Progresss bar [with title].png" alt="" class="md:h-fit md:w-fit h-full w-full">
+            <button class="text-sm bg-blue-500 hover:bg-blue-700 text-white py-2 px-6 rounded-full md:w-fit w-full my-4">
+                Try For Free
+              </button>
+         </div>
+
+       </div>
+    </main>
+
+    <!-- footer area -->
+    <footer>
+        <div class="w-full h-fit bg-[#112D57] flex md:flex-row flex-col md:justify-between justify-center items-center py-8 px-4">
+            <div>
+                <img src="assets/logo_footer.png" alt="">
+            </div>
+            <div class="md:py-0 py-6">
+                <img src="assets/social media.png" alt="">
+            </div>
+            <div>
+                <p class="text-white text-xs">Just type what's on your mind and we'll</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .main{
+            display: flex;
+            flex-flow: column;
+            margin-top: 50px;
+            align-items: center;
+            justify-content: center;
+        }
+        ul{
+            position: relative;
+            display: flex;
+            margin-top: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        li{
+            position: relative;
+            list-style: none;
+            margin: 20px;
+        }
+
+        label{
+            position: relative;
+        }
+
+        label input{
+            position: absolute;
+            visibility: hidden;
+        }
+
+        .button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 140px;
+            height: 50px;
+            background: blue;
+            border-radius: 30px;
+            transition: 1s;
+        }
+
+        .fa{
+            transition: 1s;
+        }
+
+        input:checked ~.button{
+            background: #fff;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Onclick Without Css</h1>
+        <ul>
+            <li>
+                <label>
+                    <input type="checkbox" name="">
+                    <div class="button">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </div>
+                </label>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

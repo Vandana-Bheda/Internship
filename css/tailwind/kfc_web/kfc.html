@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <title>Document</title>
+    <style>
+        .w-div{
+            border-bottom: 60px solid transparent;
+            border-left: 40px solid black;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body class="w-full h-full m-0 p-0">
+    <nav class="md:h-[60px] h-[50px] w-full flex justify-between items-center">
+        <div class="md:w-[30%] w-full h-full flex">
+            <div class="md:w-1/2 w-1/3 h-full bg-black p-2">
+                <img src="assets/logo.png" alt="" class="h-fit w-fit">
+            </div>
+            <div class="md:w-1/2 w-2/3 h-full bg-white w-div"></div>
+        </div>
+        <div class="w-[70%] md:block hidden">
+            <div class="flex justify-end">
+                <p class="pr-8 font-semibold">Home</p>
+                <p class="pr-8 font-semibold"> <a href="football.html">About Us</a></p>
+                <p class="pr-8 font-semibold">Projects</p>
+                <div class="pr-8 flex items-center">
+                    <img src="assets/phone_nav.png" alt="" class="w-fit h-fit pr-2">
+                    <p class="font-semibold">0787924419</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="flex flex-col items-center justify-center">
+            <img src="assets/body_img1.png" alt="" class="h-fit w-fit">
+            <img src="assets/retail_dev.png" alt="" class="h-fit w-fit lg:mt-[-15%] md:mt-[-20%] mt-[-20%]">
+        </div>
+        <div class="md:px-10 px-2">
+            <p class="text-red-500 font-bold text-center">PROJECT</p>
+            <P class="md:text-3xl text-2xl md:pt-4 pt-2 text-center font-semibold">Photo Gallery</P>
+            <div class="flex items-start justify-center pt-6">
+                <div>
+                    <img src="assets/photo_gallary1.png" alt="">
+                </div>
+                <div>
+                    <img src="assets/photo_gallary1.png" alt="">
+                </div>
+            </div>
+            <div class="flex justify-center items-center">
+                <div>
+                    <img src="assets/photo_gallary3.png" alt="">
+                </div>
+                <div>
+                    <img src="assets/photo_gallary4.png" alt="">
+                </div>
+                <div>
+                    <img src="assets/photo_gallary5.png" alt="">
+                </div>
+            </div>
+            <div class="flex justify-center md:pt-10 pt-4">
+                <button class="bg-red-600 text-white py-1 px-4 text-sm"> <a href="photo_gallery.html">View All</a>  </button>
+            </div>
+        </div>
+        <div class="w-full md:py-20 py-6">
+            <img src="assets/our_mission.png" alt="">
+        </div>
+        <div class="md:px-10 px-2">
+            <p class="text-red-500 font-bold text-center">About Us</p>
+            <p class="text-3xl pt-4 text-center font-semibold">What We Do</p>
+            <div class="flex md:flex-row flex-col w-full">
+                <div class="md:w-1/2 w-full md:p-5 p-2">
+                    <img src="assets/about_us1.png" alt="">
+                </div>
+                <div class="md:w-1/2 w-full flex flex-col justify-center p-4">
+                    <p class="pb-6 font-semibold text-xl">Franchisee Pipeline Delivery</p>
+                    <img src="assets/line.png" alt="" class="w-fit">
+                    <p class="pt-4 text-sm">We offer complete management of Franchisee project pipeline with end-to-end project and cost management. With over 200 new build and remodel projects completed we take projects from concept and feasibility to restaurant opening and post project close-out.</p>
+                </div>
+            </div>
+            <div class="flex md:flex-row flex-col w-full">
+                <div class="md:w-1/2 w-full flex flex-col justify-around p-4 md:order-1 order-2">
+                    <p class="pb-6 font-semibold text-xl">Project Management</p>
+                    <img src="assets/line.png" alt="" class="w-fit">
+                    <div class="flex py-4">
+                        <img src="assets/Rectangle_aboutus.png" alt="" class="h-fit w-fit pt-1">                        
+                        <p class="text-sm px-2">Scoping restaurants to initiate project concept and sketch plan</p>
+                    </div>
+                    <div class="flex py-2">
+                        <img src="assets/Rectangle_aboutus.png" alt="" class="h-fit w-fit pt-1">                        
+                        <p class="text-sm px-2">Aligning with architects on scope and drawings timelines Sitting in on plan approvals to oversee drawing approval</p>
+                    </div>
+                    <div class="flex py-2">
+                        <img src="assets/Rectangle_aboutus.png" alt="" class="h-fit w-fit pt-1">                        
+                        <p class="text-sm px-2">Sitting in on plan approvals to oversee drawing approval</p>
+                    </div>
+                    <div class="flex py-2">
+                        <button class="bg-red-600 text-white px-2 py-1 w-fit">Read More</button>
+                    </div>
+                </div>
+                <div class="md:w-1/2 w-full md:p-5 p-2 md:order-2 order-1">
+                    <img src="assets/about_us2.png" alt="">
+                </div>
+            </div>
+            <div class="flex md:flex-row flex-col w-full">
+                <div class="md:w-1/2 w-full md:p-5 p-2">
+                    <img src="assets/about_us3.png" alt="">
+                </div>
+                <div class="md:w-1/2 w-full flex flex-col justify-around p-4">
+                    <p class="pb-6 font-semibold text-xl">Cost Management</p>
+                    <img src="assets/line.png" alt="" class="w-fit">
+                    <div class="flex py-4">
+                        <img src="assets/Rectangle_aboutus.png" alt="" class="h-fit w-fit pt-1">                        
+                        <p class="text-sm px-2">Providing pre-project estimates for new builds and remodels utilizing the latest contractor costings and equipment pricing</p>
+                    </div>
+                    <div class="flex py-2">
+                        <img src="assets/Rectangle_aboutus.png" alt="" class="h-fit w-fit pt-1">                        
+                        <p class="text-sm px-2">Procurement by individually tendering main contractor and all sub-contractor packages: Shopfitting, Signage, Graphics, Refrigeration, HVAC, Extraction, CCTV, etc</p>
+                    </div>
+                    <div class="flex py-2">
+                        <button class="bg-red-600 text-white px-2 py-1 w-fit">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-red-50 p-10 flex flex-col items-center">
+            <p class="text-red-500 font-bold text-center">Contact Us</p>
+            <img src="assets/contact_us.png" alt="" class="w-fit h-fit bg-red-600 p-1 rounded-full my-4">
+            <p class="text-xs font-bold">Johannesburg Gauteng</p>
+            <div class="flex md:flex-row flex-col justify-around w-full py-8">
+                <div class="flex items-center py-1">
+                    <img src="assets/mail.png" alt="" class="h-fit w-fit">
+                    <p class="pl-2">lloyd.robinson@capexpro.co.za</p>
+                </div>
+                <div class="flex items-center py-1">
+                    <img src="assets/mail.png" alt="" class="h-fit w-fit">
+                    <p class="pl-2">office@capexpro.co.za</p>
+                </div>
+                <div class="flex items-center py-1">
+                    <img src="assets/phone.png" alt="" class="h-fit w-fit">
+                    <p class="pl-2">0787924419</p>
+                </div>
+                <div class="flex items-center py-1">
+                    <img src="assets/loaction.png" alt="" class="h-fit w-fit">
+                    <p class="pl-2">Gauteng</p>
+                </div>
+            </div>
+            <div>
+                <p class="text-sm">Hours :Monday - Friday 8am - 6pm</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="w-full bg-black text-white">
+            <div class="flex md:flex-row flex-col justify-around md:py-6 py-4">
+                <div class="flex md:flex-col flex-row md:justify-around justify-between px-6">
+                    <img src="assets/logo.png" alt="" class="h-fit w-fit">
+                    <img src="assets/linkedin.png" alt="" class="h-fit w-fit">
+                </div>
+                <div class="px-6 flex md:flex-col flex-row justify-between md:py-0 py-4">
+                    <p class="text-sm">Home</p>
+                    <p class="text-sm">About Us</p>
+                    <p class="text-sm">Projects</p>
+                    <p class="text-sm">Contact Us</p>
+                </div>
+                <div class="px-6 flex flex-col justify-between">
+                    <div class="flex items-center">
+                        <img src="assets/phone.png" alt="" class="h-fit w-fit">
+                        <p class="text-sm pl-2">0787924419</p>
+                    </div>
+                    <div class="flex md:pt-0 pt-4">
+                        <img src="assets/location_footer.png" alt="" class="h-fit w-fit pt-1">
+                        <p class="text-sm pl-2">53 Naivasha Road, Sandton, <br> Johannesburg, Gauteng 2191, <br> South Africa</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="text-center text-xs text-gray-500 py-2">Copyright © 2023 Capex Pro - ALL Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

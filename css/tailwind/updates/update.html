@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <title>Document</title>
+</head>
+
+<body class="w-full h-full">
+    <div class="w-full md:overflow-x-hidden overflow-x-scroll md:h-auto h-[20%]">
+        <nav class="flex justify-between md:w-full w-max bg-red-100 md:px-10 px-4">
+            <div>
+                <img src="assets/logo.webp" alt="" class="w-[60px]">
+            </div>
+            <div class="flex items-center">
+                <div class="flex pr-4">
+                    <img src="assets/about-us.svg" alt="" class="h-fit w-fit">
+                    <p>About Us</p>
+                </div>
+                <div class="flex items-center pr-4">
+                    <img src="assets/products.svg" alt="" class="h-fit w-fit">
+                    <p>Products</p>
+                </div>
+                <div class="flex items-center pr-4 relative">
+                    <img src="assets/cart.svg" alt="" class="h-fit w-fit">
+                    <p>Cart</p>
+                    <div class="text-xs bg-blue-400 text-white rounded-full bottom-[-35%] left-[20%] absolute px-1">3</div>
+                </div>
+                <div class="flex items-center pr-4">
+                    <img src="assets/wishlist.svg" alt="" class="h-fit w-fit">
+                    <p>Wishlist</p>
+                </div>
+                <div class="flex border-2 border-blue-400 bg-white rounded p-1">
+                    <img src="assets/eng.svg" alt="">
+                    <p class="text-sm px-1">ENG</p>
+                    <img src="assets/user-down-arrow.svg" alt="">
+                </div>
+                <div class="bg-white mx-4 rounded p-1">
+                    <img src="assets/nav-toggle.svg" alt="">
+                </div>
+                <div class="flex bg-white rounded p-3 relative">
+                    <img src="assets/user.svg" alt="">
+                    <img src="assets/user-down-arrow.svg" alt="">
+                    <div class="text-xs bg-blue-400 text-white rounded-full bottom-[0%] left-[40%] absolute px-1">1</div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <main class="md:p-10 p-2 w-full">
+        <p class="text-center text-3xl font-semibold pb-8">Updates</p>
+        <div class="bg-gray-100 p-4 rounded flex lg:flex-row flex-col w-full">
+
+            <!-- container 1 -->
+            <div class="xl:w-[50%] lg:w-[40%] md:w-full w-full mr-4">
+                <div class="p-4 bg-white rounded">
+                    <p class="font-bold">Microsoft</p>
+                    <p class="text-xs py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus iusto
+                        laudantium nihil odio illum vel porro sequi eaque doloribus facere nemo nobis minus, accusantium
+                        expedita officia unde obcaecati quia possimus atque eius ducimus ratione. Culpa quae ipsam nobis
+                        delectus eum?</p>
+                    <p class="text-blue-400 text-xs">#Microsoft #Microsoft #Microsoft</p>
+                    <div class="flex mt-4">
+                        <button class="text-xs p-1 border border-blue-700 bg-blue-50 rounded">Microsoft</button>
+                        <button class="text-xs p-1 border border-blue-700 bg-blue-50 rounded mx-2">Microsoft
+                            Home</button>
+                        <button class="text-xs p-1 border border-blue-700 bg-blue-50 rounded">Microsoft Office</button>
+                    </div>
+                </div>
+
+                <div class="p-4 bg-white rounded my-4">
+                    <div class="flex">
+                        <div class="xl:4/5 lg:w-[70%] w-4/5">
+                            <p class="text-xs">The Times Of India </p>
+                            <p class="text-xs font-bold pt-4">Here's how much money Google , Microsoft and Facebook
+                                parent</p>
+                            <p class="text-xs">Meta have spent on AI in Q1 2024</p>
+                        </div>
+                        <img src="assets/ai-google.jpeg" alt="" class="xl:1/5 lg:w-[30%] w-1/5 h-fit rounded">
+                    </div>
+                    <div class="flex mt-4">
+                        <button class="text-xs p-1 border border-blue-700 bg-blue-50 rounded">Microsoft</button>
+                        <button class="text-xs p-1 border border-blue-700 bg-blue-50 rounded mx-2">Microsoft
+                            Home</button>
+                        <button class="text-xs p-1 border border-blue-700 bg-blue-50 rounded">Microsoft Office</button>
+                    </div>
+                </div>
+
+                <div class="p-4 bg-white rounded">
+                    <div class="flex">
+                        <div class="xl:4/5 lg:w-[70%] w-4/5">
+                            <p class="text-xs">The Times Of India </p>
+                            <p class="text-xs font-bold pt-4">Here's how much money Google , Microsoft and Facebook
+                                parent</p>
+                            <p class="text-xs">Meta have spent on AI in Q1 2024</p>
+                        </div>
+                        <img src="assets/ai-google.jpeg" alt="" class="xl:1/5 lg:w-[30%] w-1/5 h-fit rounded">
+                    </div>
+                    <div class="flex mt-4">
+                        <button class="text-xs p-1 border border-blue-700 bg-blue-50 rounded">Microsoft</button>
+                        <button class="text-xs p-1 border border-blue-700 bg-blue-50 rounded mx-2">Microsoft
+                            Home</button>
+                        <button class="text-xs p-1 border border-blue-700 bg-blue-50 rounded">Microsoft Office</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- container 2 grid -->
+            <div class="xl:w-[50%] lg:w-[60%] w-full grid md:grid-cols-2 grid-cols-1 gap-4 h-full lg:mt-0 mt-4">
+                <div class="bg-white rounded p-4 text-xs">
+                    <p>The Times Of India</p>
+                    <p class="font-bold">Axel Springer to migrate some cloud applications to Microsoft's Azure
+                    </p>
+                    <img src="assets/microsoft.jpeg" alt="" class="my-4 rounded-xl">
+                    <div class="flex">
+                        <button class="p-1 border border-blue-700 bg-blue-50 rounded">Microsoft</button>
+                        <button class="p-1 border border-blue-700 bg-blue-50 rounded mx-2">Microsoft
+                            Home</button>
+                        <button class="p-1 border border-blue-700 bg-blue-50 rounded">Microsoft Office</button>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded text-xs">
+                    <p class="font-bold pb-2">Microsoft</p>
+                    <p>27 April 2024</p>
+                    <p class="py-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi minus quia veniam
+                        laboriosam neque quaerat delectus illo at voluptatum necessitatibus perspiciatis mollitia omnis
+                        similique, eveniet deleniti tempora a suscipit sit.</p>
+                    <p class="text-blue-400">#Microsoft #Microsoft #Microsoft</p>
+                    <div class="flex pt-4">
+                        <button class="p-1 border border-blue-700 bg-blue-50 rounded">Microsoft</button>
+                        <button class="p-1 border border-blue-700 bg-blue-50 rounded mx-2">Microsoft Home</button>
+                        <button class="p-1 border border-blue-700 bg-blue-50 rounded">Microsoft Office</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded p-4 text-xs">
+                    <p>The Times Of India</p>
+                    <p class="font-bold">Here's how much money Google, Microsoft and Facebook parent Meta have spent in
+                        AI in Q1 2024</p>
+                    <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, deleniti! Delectus
+                        quia hic totam doloribus sequi temporibus nemo commodi esse.</p>
+                    <div class="flex">
+                        <button class="p-1 border border-blue-700 bg-blue-50 rounded">Microsoft</button>
+                        <button class="p-1 border border-blue-700 bg-blue-50 rounded mx-2">Microsoft Home</button>
+                        <button class="p-1 border border-blue-700 bg-blue-50 rounded">Microsoft Office</button>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded text-xs">
+                    <p class="font-bold pb-2">Microsoft</p>
+                    <p class="py-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi minus quia veniam
+                        laboriosam neque quaerat delectus illo at voluptatum necessitatibus perspiciatis mollitia omnis
+                        similique, eveniet deleniti tempora a suscipit sit.</p>
+                    <p class="text-blue-400">#Microsoft #Microsoft #Microsoft</p>
+                    <div class="flex pt-4">
+                        <button class="p-1 border border-blue-700 bg-blue-50 rounded">Microsoft</button>
+                        <button class="p-1 border border-blue-700 bg-blue-50 rounded mx-2">Microsoft Home</button>
+                        <button class="p-1 border border-blue-700 bg-blue-50 rounded">Microsoft Office</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
