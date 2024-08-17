@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>bootstrap 4</title>
+    <style>
+        nav {
+            margin: 10px;
+            background-color: black;
+            height: 50px;
+        }
+
+        .navbar1 {
+            display: flex;
+            align-items: center;
+        }
+
+        nav img {
+            height: 20px;
+            padding-left: 10px;
+        }
+
+        nav a {
+            padding: 10px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar1 a.active{
+            font-weight: bold;
+        }
+
+        body{
+            background-color: #dee0df;
+        }
+        .userinfo {
+            background-image: linear-gradient(90deg, black, purple, seagreen, black);
+        }
+
+        .userimg div{
+            background-color: white;
+            width: 90px;
+            height: 90px;
+            margin: 0 0 0 5px;
+        }
+
+
+        .navbar2 a {
+            text-decoration: none;
+            color: black;
+        }
+        .navbar2 a small{
+            font-weight: bold;
+        }
+
+        footer div small::before {
+            content: "\00BB";
+            font-size: 25px;
+            display: inline-block;
+            vertical-align: top;
+            line-height: 1;
+            margin-right: 4px;
+        }
+
+        footer div a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .quick-link::before {
+            content: '';
+            height: 20px;
+            width: 2px;
+            background-color: #fff;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        @media only screen and (min-width: 992px){
+            .navbar2 a small.post {
+            padding-left: 90px;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar1">
+            <img src="melogo1.png" alt="">
+            <a href="4home.html">Home</a>
+            <a href="4me.html" class="active">Me</a>
+            <a href="4blog.html">Blog</a>
+    </nav>
+
+    <main>
+
+        <div class="container">
+            <div class="card userinfo">
+                <div class="row no-gutters">
+                    <div class=" userimg col-lg-1 col-md-3 col-4 d-flex align-items-center justify-content-center">
+                        <div class="rounded"></div>
+                    </div>
+                    <div class="col-lg-11 col-md-9 col-8 text-white">
+                        <div class="card-body">
+                            <h5 class="card-title m-0 p-0">John Deo</h5>
+                            <p class="card-text m-0 p-0">UIUX + Fontend Developer</p>
+                            <button type="button" class="btn btn-primary mt-2">Edit Profile</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar2 bg-light">
+                <a href="#" class="p-lg-4 p-md-2 p-1"><small class="post">POSTS</small></a>
+                <a href="#" class="p-lg-4 p-md-2 p-1"><small>ABOUT</small></a>
+                <a href="" class="p-lg-4 p-md-2 p-1"><small>PHOTOS</small></a>
+                <a href="" class="p-lg-4 p-md-2 p-1"><small>VIDEOS</small></a>
+                <a href="" class="p-lg-4 p-md-2 p-1 text-primary"><small>FRIENDS</small></a>
+            </div>
+        </div>
+
+        <!-- video container -->
+        <div class="container">
+            <div class="row">
+                <!-- video container -->
+                <div class="col-lg-9 col-md-8 col-12">
+                    <p><b>Video(15)</b></p>
+                    <div class="row no-gutters m-1">
+                        <div class="col-lg-8 col-md-8 col-12">
+                            <iframe class="float-left" width="100%" height="100%"
+                                src="https://www.youtube.com/embed/61ppyY5rUB0?si=AkeUD-xTQ8neXqNV"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-12 d-flex flex-column">
+                            <iframe width="100%" height="50%"
+                                src="https://www.youtube.com/embed/61ppyY5rUB0?si=AkeUD-xTQ8neXqNV"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="100%" height="50%"
+                                src="https://www.youtube.com/embed/61ppyY5rUB0?si=AkeUD-xTQ8neXqNV"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="row no-gutters m-1">
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <iframe width="100%" height="100%"
+                                src="https://www.youtube.com/embed/61ppyY5rUB0?si=AkeUD-xTQ8neXqNV"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <iframe width="100%" height="100%"
+                                src="https://www.youtube.com/embed/61ppyY5rUB0?si=AkeUD-xTQ8neXqNV"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <iframe width="100%" height="100%"
+                                src="https://www.youtube.com/embed/61ppyY5rUB0?si=AkeUD-xTQ8neXqNV"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="row no-gutters m-1">
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <iframe width="100%" height="100%"
+                                src="https://www.youtube.com/embed/61ppyY5rUB0?si=AkeUD-xTQ8neXqNV"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <iframe width="100%" height="100%"
+                                src="https://www.youtube.com/embed/61ppyY5rUB0?si=AkeUD-xTQ8neXqNV"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <iframe width="100%" height="100%"
+                                src="https://www.youtube.com/embed/61ppyY5rUB0?si=AkeUD-xTQ8neXqNV"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="row no-gutters m-1">
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <iframe width="100%" height="100%"
+                                src="https://www.youtube.com/embed/61ppyY5rUB0?si=AkeUD-xTQ8neXqNV"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <iframe width="100%" height="100%"
+                                src="https://www.youtube.com/embed/61ppyY5rUB0?si=AkeUD-xTQ8neXqNV"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <iframe width="100%" height="100%"
+                                src="https://www.youtube.com/embed/61ppyY5rUB0?si=AkeUD-xTQ8neXqNV"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="row no-gutters m-1">
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <iframe width="100%" height="100%"
+                                src="https://www.youtube.com/embed/61ppyY5rUB0?si=AkeUD-xTQ8neXqNV"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <iframe width="100%" height="100%"
+                                src="https://www.youtube.com/embed/61ppyY5rUB0?si=AkeUD-xTQ8neXqNV"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <iframe width="100%" height="100%"
+                                src="https://www.youtube.com/embed/61ppyY5rUB0?si=AkeUD-xTQ8neXqNV"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- personal informatio -->
+                 <div class="col-lg-3 col-md-4 col-12 mt-2">
+                    <small class="text-secondary">PERSONAL INFORMATION</small><br>
+                    <p>
+                        <b>Occupation:</b><br>
+                        <small class="text-secondary">UIUX Frontend Developer</small>
+                    </p>
+
+                    <p>
+                        <b>Skills:</b><br>
+                        <small class="text-secondary">C++,PHPHTML5,CSS,jQUERY,MYSQL,lonic,<br>Laravel,Phonegap,Bootstrap,Angular JS,Asp.net</small>
+                    </p> 
+                    
+                    <p>
+                        <b>Birth of Date:</b><br>
+                        <small class="text-secondary">1989/11/04</small>
+                    </p> 
+
+                    <p>
+                        <b>Country:</b><br>
+                        <small class="text-secondary">San Francisco</small>
+                    </p> 
+
+                    <p>
+                        <b>Address:</b><br>
+                        <small class="text-secondary">Twitter Inc. <br>
+                        1355 Market Street, Suite 900 <br>
+                        San Francisco, CA 94103</small>
+                    </p> 
+
+                    <p>
+                        <b>Phone No.:</b><br>
+                        <small class="text-secondary">(123) 456-7890</small>
+                    </p>
+                    <small class="text-secondary">FRIEND LIST (9)</small><br>
+                    <img src="1_userimg.png" alt="" class="rounded-circle" style="width: 30px;">
+                    <img src="1_userimg.png" alt="" class="rounded-circle" style="width: 30px;">
+                    <img src="1_userimg.png" alt="" class="rounded-circle" style="width: 30px;">
+                    <img src="1_userimg.png" alt="" class="rounded-circle" style="width: 30px;">
+                    <img src="1_userimg.png" alt="" class="rounded-circle" style="width: 30px;">
+                    <img src="1_userimg.png" alt="" class="rounded-circle" style="width: 30px;">
+                    <img src="1_userimg.png" alt="" class="rounded-circle" style="width: 30px;">
+                    <img src="1_userimg.png" alt="" class="rounded-circle" style="width: 30px;">
+                    <img src="1_userimg.png" alt="" class="rounded-circle" style="width: 30px;">
+                 </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer Area -->
+    <footer style="background-color: white;">
+        <div style="background-color: seagreen; color: white;">
+            <div class="container m-1 p-5 d-flex justify-content-around row">
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="quick-link">Quick Links</div>
+                    <small>Home</small> <br>
+                    <small>About</small> <br>
+                    <small>FAQ</small> <br>
+                    <small>Get Started</small> <br>
+                    <small>Videos</small> <br>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="quick-link">Quick Links</div>
+                    <small>Home</small> <br>
+                    <small>About</small> <br>
+                    <small>FAQ</small> <br>
+                    <small>Get Started</small> <br>
+                    <small>Videos</small> <br>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="quick-link">Quick Links</div>
+                    <small>Home</small> <br>
+                    <small>About</small> <br>
+                    <small>FAQ</small> <br>
+                    <small>Get Started</small> <br>
+                    <small>Videos</small> <br>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <img src="4_facebook.svg" alt="" class="p-1">
+                <img src="4_twitter.svg" alt="" class="p-1">
+                <img src="4_insta.svg" alt="" class="p-1">
+                <img src="4_google.svg" alt="" class="p-1">
+                <img src="4_mail.svg" alt="" class="p-1">
+            </div>
+            <div class="d-flex justify-content-center pt-2">
+                <a href="#">bootdey.com</a>
+            </div>
+            <div class="d-flex justify-content-center pt-2">
+                <p> &copy; All right Reversed. Sunlimetech</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

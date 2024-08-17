@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>bootstrap 4</title>
+    <style>
+        #navigation {
+            margin: 10px;
+            background-color: black;
+            height: 50px;
+            
+            display: flex;
+            align-items: center;
+        }
+
+
+        #navigation img {
+            height: 20px;
+            padding-left: 10px;
+        }
+
+        #navigation a {
+            padding: 10px;
+            text-decoration: none;
+            color: white;
+        }
+
+        #navigation a.active{
+            font-weight: bold;
+        }
+
+        body{
+            background-color: #dee0df;
+        }
+
+        footer div small::before {
+            content: "\00BB";
+            font-size: 25px;
+            display: inline-block;
+            vertical-align: top;
+            line-height: 1;
+            margin-right: 4px;
+        }
+
+        footer div a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .quick-link::before {
+            content: '';
+            height: 20px;
+            width: 2px;
+            background-color: #fff;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav id="navigation">
+            <img src="melogo1.png" alt="">
+            <a href="4home.html">Home</a>
+            <a href="4me.html">Me</a>
+            <a href="4blog.html" class="active">Blog</a>
+    </nav>
+
+    <!-- Main  -->
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-7 col-12">
+                    <!-- container 1 -->
+                    <div class="container border rounded mt-4 p-3 bg-white">
+                        <h5>All photographs are accurate</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sit nulla recusandae fuga
+                            veniam. Fuga impedit dignissimos nemo corporis distinctio quo vero eum vel, provident
+                            voluptatem, in fugiat atque iusto, eaque ut qui placeat reprehenderit. Aperiam ea labore,
+                            numquam, deserunt iure dicta at neque, autem asperiores provident assumenda esse nihil!</p>
+                    </div>
+                    <!-- container 2 -->
+                    <div class="container border rounded mt-3 bg-white">
+                        <h5 class="pb-3 pt-2 ">Comments 3</h5>
+                        <!-- comment 1 -->
+                        <div class="card border-0">
+                            <div class="row no-gutters">
+                                <div class="col-md-2 d-flex align-items-center justify-content-center">
+                                    <img src="4user.png" alt="..." style="width: 80px;;">
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Gigi Hadid</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer. <br>
+                                            <span class="text-primary">
+                                                Mar 09 2018 Reply
+                                            </span>
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- comment 2 -->
+                        <div class="card border-0">
+                            <div class="row no-gutters">
+                                <div class="col-md-2 d-flex align-items-center justify-content-center">
+                                    <img src="4user.png" alt="..." style="width: 80px;;">
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Gigi Hadid</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer. <br>
+                                            <span class="text-primary">
+                                                Mar 09 2018 Reply
+                                            </span>
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- comment 3 -->
+
+                        <div class="card border-0">
+                            <div class="row no-gutters">
+                                <div class="col-md-2 d-flex align-items-center justify-content-center">
+                                    <img src="4user.png" alt="..." style="width: 80px;;">
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Gigi Hadid</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer. <br>
+                                            <span class="text-primary">
+                                                Mar 09 2018 Reply
+                                            </span>
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- container 3 -->
+                    <div class="container border rounded mt-3 mb-5 p-3 bg-white">
+                        <p><b>Leave a reply</b>Your mail address wil not be published. <br>
+                            Required fields are marked*</p>
+
+                        <div class="row pt-5">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Your Name">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Email Address">
+                            </div>
+                        </div>
+                        <textarea class="form-control mt-3" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Please type what you want..."></textarea>
+                        <button type="button" class="btn btn-primary btn-lg btn-block mt-3">Submit</button>
+                    </div>
+                </div>
+                <!-- sidebar -->
+                <div class="col-lg-4 col-md-5 col-12">
+                    <!-- container 1 -->
+                    <div class="container border rounded m-lg-4 m-md-2 m-1bg-white">
+                        <nav class="navbar navbar-light w-100">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">
+                                        <img src="4search.svg" alt="">
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Search..." aria-label="Username"
+                                    aria-describedby="basic-addon1">
+                            </div>
+                        </nav>
+                    </div>
+
+                    <!-- container 2 -->
+                    <div class="container border rounded m-lg-4 m-md-2 m-1 p-lg-2 p-1 bg-white">
+                        <h5>Catagories Clouds</h5>
+                        <button type="button" class="btn btn-outline-primary m-1">eCommerce</button><br>
+                        <button type="button" class="btn btn-outline-primary m-1">Microsoft Technologies</button> <br>
+                        <button type="button" class="btn btn-outline-primary m-1">Creative UX</button>
+                        <button type="button" class="btn btn-outline-primary m-1">Wordpress</button>
+                        <button type="button" class="btn btn-outline-primary m-1">Angular JS</button>
+                        <button type="button" class="btn btn-outline-primary m-1">Enterprise Mobility</button>
+                        <button type="button" class="btn btn-outline-primary m-1">Website Dessign</button>
+                        <button type="button" class="btn btn-outline-primary m-1">HTML5</button>
+                        <button type="button" class="btn btn-outline-primary m-1">Infographics</button>
+                        <button type="button" class="btn btn-outline-primary m-1">Wordpress Development</button>
+                    </div>
+
+                    <!-- container 3 -->
+                    <div class="container border rounded m-lg-4 m-md-2 m-1 p-lg-2 p-1 bg-white">
+                        <h5>Popular Posts</h5>
+                        <p>Apple Introduces Search Ads Basic <b>jun 22,2018</b></p><br>
+                        <p>new rules, more cars, more races <b>jun 22,2018</b></p><br>
+                    </div>
+
+                    <!-- container 4 -->
+                    <div class="container border rounded m-lg-4 m-md-2 m-1 p-lg-2 p-1 bg-white">
+                        <h5>Instagram Posts</h5><br><br><br>
+                    </div>
+
+                    <!-- container 5 -->
+                    <div class="container border rounded m-lg-4 m-md-2 m-1 p-lg-2 p-1 bg-white">
+                        <p><b class="blockquote">Email Newsletter</b> Get our products/news earlier than others, let's
+                            get in touch.</p>
+
+                        <nav class="navbar navbar-light w-100">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Enter Email" aria-label="Username"aria-describedby="basic-addon1">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text rounded-right" id="basic-addon1">
+                                    </span>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <!-- Footer Area -->
+    <footer style="background-color: white;">
+        <div style="background-color: seagreen; color: white;">
+            <div class="container m-1 p-5 d-flex justify-content-around row">
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="quick-link">Quick Links</div>
+                    <small>Home</small> <br>
+                    <small>About</small> <br>
+                    <small>FAQ</small> <br>
+                    <small>Get Started</small> <br>
+                    <small>Videos</small> <br>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="quick-link">Quick Links</div>
+                    <small>Home</small> <br>
+                    <small>About</small> <br>
+                    <small>FAQ</small> <br>
+                    <small>Get Started</small> <br>
+                    <small>Videos</small> <br>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="quick-link">Quick Links</div>
+                    <small>Home</small> <br>
+                    <small>About</small> <br>
+                    <small>FAQ</small> <br>
+                    <small>Get Started</small> <br>
+                    <small>Videos</small> <br>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <img src="4_facebook.svg" alt="" class="p-1">
+                <img src="4_twitter.svg" alt="" class="p-1">
+                <img src="4_insta.svg" alt="" class="p-1">
+                <img src="4_google.svg" alt="" class="p-1">
+                <img src="4_mail.svg" alt="" class="p-1">
+            </div>
+            <div class="d-flex justify-content-center pt-2">
+                <a href="#">bootdey.com</a>
+            </div>
+            <div class="d-flex justify-content-center pt-2">
+                <p> &copy; All right Reversed. Sunlimetech</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
